@@ -43,12 +43,14 @@ check your latest edits without touching `data/guide.db`.
 | `tests/test_build_db.py` | The text parsers, slugs, cross-link detection and build validation |
 | `tests/test_data.py` | Every entry is complete, has a drawing and a valid first book; products and links are sound |
 | `tests/test_app.py` | Every route, filters, search, the JSON API, safe cross-linking and the tagged Amazon links |
+| `tests/test_editor.py` | Adding, editing and renaming entries, validation, restoring files after a failure, and who may edit |
 
 ## Project layout
 
 | Path | What it is |
 | --- | --- |
-| `app.py` | The Flask app: cover, index, entries, random, search and a JSON API |
+| `app.py` | The Flask app: cover, index, entries, books, shop, search, add/edit forms and a JSON API |
+| `editor.py` | Adds and edits entries by updating the text files, then rebuilding the database |
 | `templates/` | Jinja templates for the device screens |
 | `static/` | The device styling and small scripts (starfield, typewriter text, instant filter) |
 | `start.bat` | One-click start on Windows |
@@ -60,7 +62,36 @@ check your latest edits without touching `data/guide.db`.
 | `data/build_db.py` | Rebuilds `data/guide.db` from the text and art |
 | `data/guide.db` | The SQLite database the app reads |
 
-## Adding an entry
+## Adding and editing entries in the browser
+
+Choose **Add an entry** on the index page, or **EDIT** on any entry. When you save:
+
+1. the entry's block in `data/references.txt` and `data/details.txt` is updated
+   (a rename also updates `data/products.txt` and renames the entry's drawing),
+2. the database is rebuilt from the files,
+3. and if anything goes wrong, every file is put back exactly as it was.
+
+The forms write to the text files, not just the database, because `start.bat`
+rebuilds the database from the files on every start. Changes made any other way
+would be lost.
+
+New entries use their category's drawing. To give one its own, add an SVG file
+to `data/art/` (see below). Deleting entries isn't supported in the browser yet;
+remove the entry's blocks from both text files instead.
+
+Who can edit is set with the `GUIDE_EDITING` environment variable:
+
+| Value | Who can add and edit |
+| --- | --- |
+| `local` (default) | Only someone on the computer the Guide runs on |
+| `on` | Anyone who can reach the site. Use only on a network you trust |
+| `off` | Nobody: the Guide is read-only |
+
+The forms are protected against cross-site request forgery. Set `GUIDE_SECRET_KEY`
+to a long random value if the Guide runs somewhere long-lived; otherwise a new key
+is made at each start.
+
+## Adding an entry by hand
 
 1. Add a block to `data/references.txt`:
 
@@ -108,6 +139,7 @@ set at the top of `app.py`, and can be overridden with environment variables:
 | `/` | The cover |
 | `/index?cat=P&book=2&q=towel` | The index, filtered by category, book and text |
 | `/entry/<slug>` | One entry, with its story, tip, appearances and cross-links |
+| `/entry/new`, `/entry/<slug>/edit` | Forms to add and edit entries |
 | `/books`, `/book/<n>` | The six books, each with a synopsis, its entries and an Amazon link |
 | `/shop` | Every product, grouped, with Amazon links |
 | `/random` | A random entry |

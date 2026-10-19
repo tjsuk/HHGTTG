@@ -1,0 +1,12 @@
+{#
+  error.html: shown for refused requests (400 and 403), inside the device.
+  Receives code, heading and message from the error handlers in app.py.
+#}
+{% extends "base.html" %}
+{% block title %}{{ heading }} · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}ERROR {{ code }}{% endblock %}
+{% block view %}
+<h2>{{ heading }}</h2>
+<p>{{ message }}</p>
+<p class="meta"><a href="{{ url_for('index') }}">Return to the Index</a></p>
+{% endblock %}

@@ -1,0 +1,91 @@
+{#
+  edit.html: the form for adding (old_name is None) and editing an entry.
+  Receives from new_entry() / edit_entry() in app.py:
+    entry           the values to show: from the files, or as just submitted
+    old_name        the entry's current name when editing, None when adding
+    errors          problems found by editor.validate(), shown at the top
+    old_slug        the entry's current address, for the Cancel link
+  The category and book lists come from the lookups() context processor.
+
+  The form posts back to the same address it was loaded from (no action
+  attribute needed). Every field keeps what was typed, so a mistake never
+  means retyping the whole entry.
+#}
+{% extends "base.html" %}
+{% set adding = old_name is none %}
+{% block title %}{{ 'Add an entry' if adding else 'Edit ' ~ old_name }} · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}{{ 'NEW ENTRY' if adding else 'EDITING: ' ~ old_name|upper|truncate(22, True, '…') }}{% endblock %}
+{% block view %}
+<h2>{{ 'Add an entry' if adding else 'Edit ' ~ old_name }}</h2>
+
+{% if errors %}
+{# role="alert" makes screen readers announce the problems as soon as the page loads. #}
+<div class="errors" role="alert">
+  <p>The entry was not saved. Fix {{ 'this' if errors|length == 1 else 'these' }} and try again:</p>
+  <ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+<form class="entry-form" method="post">
+  {# The CSRF token proves the form came from this site (see csrf_token() in app.py). #}
+  <input type="hidden" name="csrf" value="{{ csrf_token() }}">
+
+  <label for="f-name">Name</label>
+  <input id="f-name" name="name" value="{{ entry.name }}" maxlength="80" required>
+  {% if not adding %}<p class="hint">Renaming changes the entry's address. Links and products follow the new name.</p>{% endif %}
+
+  <div class="row">
+    <div>
+      <label for="f-category">Category</label>
+      <select id="f-category" name="category">
+        {% for c in categories %}
+        <option value="{{ c.code }}" {% if c.code == entry.category %}selected{% endif %}>{{ c.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="f-book">First appears in</label>
+      <select id="f-book" name="book">
+        {% for b in books %}
+        <option value="{{ b.number }}" {% if b.number == entry.book %}selected{% endif %}>Book {{ b.number }}: {{ b.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+
+  {# A fieldset with a legend groups the checkboxes under one label for screen readers. #}
+  <fieldset>
+    <legend>Appears in</legend>
+    <div class="checks">
+      {% for b in books %}
+      <label class="check" title="{{ b.title }}">
+        <input type="checkbox" name="books" value="{{ b.number }}" {% if b.number in entry.books %}checked{% endif %}> Book {{ b.number }}
+      </label>
+      {% endfor %}
+    </div>
+    <p class="hint">The first book is always included.</p>
+  </fieldset>
+
+  <label for="f-summary">Summary</label>
+  <input id="f-summary" name="summary" value="{{ entry.summary }}" required>
+  <p class="hint">One line, shown in the index.</p>
+
+  <label for="f-body">Guide entry</label>
+  <textarea id="f-body" name="body" rows="8" required>{{ entry.body }}</textarea>
+  <p class="hint">Leave a blank line between paragraphs. Names of other entries become links automatically.</p>
+
+  <label for="f-story">In the story</label>
+  <textarea id="f-story" name="story" rows="3" required>{{ entry.story }}</textarea>
+
+  <label for="f-tip">Hitchhiker's tip</label>
+  <input id="f-tip" name="tip" value="{{ entry.tip }}" required>
+
+  <div class="actions">
+    <button class="save" type="submit">{{ 'Add to the Guide' if adding else 'Save changes' }}</button>
+    {# Cancel uses the slug from before any edits, since a mistyped new name may not exist. #}
+    <a href="{{ url_for('index') if adding else url_for('entry', slug=old_slug) }}">Cancel</a>
+  </div>
+  <p class="hint">Saving updates the text files in the data folder and rebuilds the Guide.
+    {% if adding %}New entries use their category's drawing.{% endif %}</p>
+</form>
+{% endblock %}

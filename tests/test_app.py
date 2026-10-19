@@ -28,13 +28,14 @@ def test_404_page_uses_the_guide_layout(client):
 def test_index_lists_every_entry(client, con):
     total = con.execute("SELECT COUNT(*) FROM entries").fetchone()[0]
     page = client.get("/index").get_data(as_text=True)
-    assert page.count('href="/entry/') == total
+    # Count the list items, not every /entry/ link: the page also has "Add an entry".
+    assert page.count("<li data-text=") == total
 
 
 def test_index_filters_by_category(client, con):
     species = con.execute("SELECT COUNT(*) FROM entries WHERE category = 'S'").fetchone()[0]
     page = client.get("/index?cat=S").get_data(as_text=True)
-    assert page.count('href="/entry/') == species
+    assert page.count("<li data-text=") == species
     assert "Babel Fish" in page and "Arthur Dent" not in page
 
 

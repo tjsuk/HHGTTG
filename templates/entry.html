@@ -18,6 +18,8 @@
 <p class="meta">
   <a href="{{ url_for('index', cat=e.category) }}">{{ e.category_name|upper }}</a> ·
   FIRST SEEN IN <a href="{{ url_for('book', number=e.book) }}">BOOK {{ e.book }}</a>
+  {# The Edit link only appears for visitors allowed to edit (can_edit() in app.py). #}
+  {% if can_edit() %} · <a href="{{ url_for('edit_entry', slug=e.slug) }}">EDIT</a>{% endif %}
 </p>
 <div class="art" aria-hidden="true">
   {# Opt-out 1: |safe prints the SVG as markup instead of escaping it. That is only

@@ -18,9 +18,11 @@ Output: guide.db, rebuilt from scratch every time.
 
 Run from anywhere:  python data/build_db.py   (start.bat runs it for you)
 """
+import os
 import pathlib
 import re
 import sqlite3
+import time
 
 # Paths are worked out from this file's location, so the script works whatever
 # the current directory is (start.bat, PyCharm and the tests all run it differently).
@@ -210,19 +212,21 @@ def find_links(entries):
     return links
 
 
-def main(db_path: pathlib.Path = DB) -> pathlib.Path:
-    """Read every data file, check it, and write a fresh database to db_path.
+def main(db_path: pathlib.Path = DB, data_dir: pathlib.Path = HERE) -> pathlib.Path:
+    """Read every data file in data_dir, check it, and write a fresh database to db_path.
 
-    db_path is a parameter so the tests can build into a temporary folder and
-    never touch the real data/guide.db. Returns the path it wrote.
+    Both are parameters so the tests can build from a copy of the data into a
+    temporary folder, and never touch the real files. Returns the path it wrote.
     """
+    db_path = pathlib.Path(db_path)
+    data_dir = pathlib.Path(data_dir)
     # 1. Read all the inputs.
-    art_dir = HERE / "art"
+    art_dir = data_dir / "art"
     # {slug: svg markup}, e.g. {"marvin": "<path .../>", "category-p": "..."}
     art = {p.stem: p.read_text(encoding="utf-8").strip() for p in art_dir.glob("*.svg")}
-    refs = list(parse((HERE / "references.txt").read_text(encoding="utf-8")))
-    details = parse_details((HERE / "details.txt").read_text(encoding="utf-8"))
-    synopses = {int(k): v for k, v in blocks((HERE / "books.txt").read_text(encoding="utf-8")).items()}
+    refs = list(parse((data_dir / "references.txt").read_text(encoding="utf-8")))
+    details = parse_details((data_dir / "details.txt").read_text(encoding="utf-8"))
+    synopses = {int(k): v for k, v in blocks((data_dir / "books.txt").read_text(encoding="utf-8")).items()}
 
     # 2. Check the data before writing anything, so a mistake stops the build
     #    with a message naming the entry, instead of producing a broken database.
@@ -248,10 +252,64 @@ def main(db_path: pathlib.Path = DB) -> pathlib.Path:
         key=lambda e: e[0].lower(),
     )
 
-    # 3. Write the database. Deleting the old file first means every build starts
-    #    clean: no leftover rows from entries that have since been removed.
-    db_path.unlink(missing_ok=True)
-    con = sqlite3.connect(db_path)
+    # 3. Write the database into a temporary file next to the real one, then swap
+    #    it into place at the end (step 5). Why not write guide.db directly?
+    #    * The app may be running. With the swap, it sees either the complete old
+    #      database or the complete new one, never a half-written file.
+    #    * If anything fails part-way, the old database is left untouched.
+    #    Starting from an empty file also means no leftover rows from removed entries.
+    tmp_path = db_path.with_name(db_path.name + ".tmp")
+    tmp_path.unlink(missing_ok=True)
+    con = sqlite3.connect(tmp_path)
+    try:
+        products = _write_tables(con, data_dir, entries, details, synopses, names, art)
+        total, featured = con.execute("SELECT COUNT(*), SUM(featured) FROM entries").fetchone()
+        appearances = con.execute("SELECT COUNT(*) FROM entry_books").fetchone()[0]
+        links = con.execute("SELECT COUNT(*) FROM entry_links").fetchone()[0]
+    except BaseException:
+        con.close()
+        tmp_path.unlink(missing_ok=True)
+        raise
+    con.close()
+
+    # 5. Swap the new database into place. os.replace is atomic: the file
+    #    switches over in one step.
+    _swap_into_place(tmp_path, db_path)
+
+    # 6. Report what was built, so start.bat's window shows the build worked.
+    print(
+        f"Wrote {db_path.name}: {total} entries ({featured} with their own drawing), "
+        f"{appearances} book appearances, {links} cross-references, {len(products)} products."
+    )
+    return db_path
+
+
+def _swap_into_place(tmp_path: pathlib.Path, db_path: pathlib.Path, attempts: int = 20) -> None:
+    """Replace db_path with tmp_path, retrying briefly if the file is in use.
+
+    Windows refuses to replace a file that any program has open. The app opens
+    the database only for the length of one request (a few milliseconds), so if
+    a page happens to be loading at the moment of the swap, waiting a moment and
+    trying again is enough. If it still fails, the temporary file is removed so
+    nothing is left behind, and the error is passed on.
+    """
+    for attempt in range(attempts):
+        try:
+            os.replace(tmp_path, db_path)
+            return
+        except PermissionError:
+            if attempt == attempts - 1:
+                tmp_path.unlink(missing_ok=True)
+                raise
+            time.sleep(0.05)
+
+
+def _write_tables(con, data_dir, entries, details, synopses, names, art):
+    """Create the tables and insert every row. Returns the list of products.
+
+    Split out of main() so main() can clean up the temporary file if anything
+    in here fails (for example a product naming an entry that does not exist).
+    """
     con.executescript(SCHEMA)
     # executemany inserts all rows in one call; "?" placeholders let sqlite3
     # handle quoting, so apostrophes in names cannot break the SQL.
@@ -280,7 +338,7 @@ def main(db_path: pathlib.Path = DB) -> pathlib.Path:
     # products.txt is one product per line: kind | title | search | book | entry | description,
     # with "-" for "none" in the book and entry columns.
     products = []
-    for line in (HERE / "products.txt").read_text(encoding="utf-8").splitlines():
+    for line in (data_dir / "products.txt").read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         kind, title, search, book, entry, desc = (p.strip() for p in line.split("|"))
@@ -304,20 +362,9 @@ def main(db_path: pathlib.Path = DB) -> pathlib.Path:
         "INSERT INTO entry_links VALUES (?,?)",
         [(ids[a], ids[b]) for a, b in find_links(entries)],
     )
-    # Nothing is saved until commit; if anything above failed, the file would
-    # be left without data rather than half-written.
+    # 4. Nothing is saved until commit.
     con.commit()
-
-    # 4. Report what was built, so start.bat's window shows the build worked.
-    total, featured = con.execute("SELECT COUNT(*), SUM(featured) FROM entries").fetchone()
-    appearances = con.execute("SELECT COUNT(*) FROM entry_books").fetchone()[0]
-    links = con.execute("SELECT COUNT(*) FROM entry_links").fetchone()[0]
-    con.close()
-    print(
-        f"Wrote {db_path.name}: {total} entries ({featured} with their own drawing), "
-        f"{appearances} book appearances, {links} cross-references, {len(products)} products."
-    )
-    return db_path
+    return products
 
 
 if __name__ == "__main__":

@@ -161,6 +161,34 @@ a { color: inherit; }
 .related { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 18px; }
 .related a:hover { color: var(--amber); }
 
+/* Messages and the entry form
+   Form controls inherit the screen font and colours, so the form looks like
+   part of the Guide's display rather than a standard web form. */
+.notice { border: 1px solid var(--phosphor); border-radius: 4px; padding: 2px 8px; color: var(--phosphor); }
+.errors { border: 1px solid var(--amber); border-radius: 4px; padding: 4px 10px; margin-bottom: 10px; color: var(--amber); font-size: 18px; }
+.errors p { margin: 0 0 2px; }
+.errors ul { margin: 0; padding-left: 20px; }
+.entry-form { display: grid; gap: 4px; }
+.entry-form label, .entry-form legend { font-size: 17px; letter-spacing: .06em; text-transform: uppercase; color: var(--phosphor-dim); margin-top: 6px; }
+.entry-form input:not([type="checkbox"]), .entry-form select, .entry-form textarea {
+  width: 100%; background: #7fe8d30d; border: 1px solid #7fe8d355; border-radius: 3px;
+  color: var(--phosphor); font: inherit; font-size: 20px; padding: 2px 6px; outline: 0;
+}
+.entry-form textarea { resize: vertical; line-height: 1.15; }
+.entry-form select option { background: var(--screen); }
+.entry-form input:focus, .entry-form select:focus, .entry-form textarea:focus { border-color: var(--amber); }
+.entry-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.entry-form .row > div { min-width: 0; }
+.entry-form fieldset { border: 1px dashed #7fe8d344; border-radius: 4px; padding: 2px 8px 6px; margin: 6px 0 0; }
+.entry-form .checks { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.entry-form label.check { text-transform: none; letter-spacing: 0; font-size: 19px; color: var(--phosphor); margin: 0; cursor: pointer; }
+.entry-form input[type="checkbox"] { accent-color: var(--amber); }
+.hint { margin: 0; font-size: 16px; color: var(--phosphor-dim); }
+.actions { display: flex; align-items: center; gap: 16px; margin-top: 10px; }
+.save { font: inherit; font-size: 20px; cursor: pointer; background: transparent; color: var(--amber); border: 1px solid var(--amber); border-radius: 4px; padding: 2px 12px; }
+.save:hover, .save:focus-visible { background: var(--amber); color: var(--screen); text-shadow: none; }
+@media (max-width: 420px) { .entry-form .row { grid-template-columns: 1fr; } }
+
 /* Keypad
    The keys are links and a button styled alike. The :active rule nudges a key
    down and shrinks its shadow, so it feels pressed. */

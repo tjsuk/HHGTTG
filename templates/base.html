@@ -39,7 +39,13 @@
     <section class="screen" aria-live="polite">
       <div class="status"><span>{% block crumb %}INDEX{% endblock %}</span><span id="clock">GST --:--:--</span></div>
       {# tabindex="0" makes the scrolling screen focusable, so it can be scrolled with the keyboard. #}
-      <div class="view" tabindex="0">{% block view %}{% endblock %}</div>
+      <div class="view" tabindex="0">
+        {# Messages from flash() in app.py, such as "Saved your changes". Flask keeps
+           them in the session until the next page shows them, which is how a message
+           survives the redirect after saving a form. #}
+        {% for message in get_flashed_messages() %}<p class="notice" role="status">{{ message }}</p>{% endfor %}
+        {% block view %}{% endblock %}
+      </div>
       {# A plain GET form: searching works with no JavaScript, and results have a shareable URL. #}
       <form class="search" action="{{ url_for('search') }}" method="get" autocomplete="off">
         <label for="q">&gt;</label>

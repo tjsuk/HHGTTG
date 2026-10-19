@@ -14,14 +14,20 @@ How it fits together
 Run:  flask --app app run   (or: python app.py, or double-click start.bat)
 """
 import os
+import pathlib
 import random
 import re
+import secrets
 import sqlite3
 
 from urllib.parse import urlencode
 
-from flask import Flask, abort, g, jsonify, redirect, render_template, request, url_for
+from flask import (
+    Flask, abort, flash, g, jsonify, redirect, render_template, request, session, url_for,
+)
 from markupsafe import Markup, escape
+
+import editor
 
 # --- Settings ----------------------------------------------------------------
 # Each setting reads an environment variable first, so the tests (or a different
@@ -32,6 +38,19 @@ from markupsafe import Markup, escape
 DB_PATH = os.environ.get(
     "GUIDE_DB", os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "guide.db")
 )
+# The folder of text files the database is built from. The add and edit forms
+# write here (see editor.py), then rebuild DB_PATH from it.
+DATA_DIR = os.environ.get(
+    "GUIDE_DATA", os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+)
+
+# Who may add and edit entries:
+#   "local" (default)  only someone using the computer the Guide runs on
+#   "on"               anyone who can reach the site (only for a trusted network)
+#   "off"              nobody; the Guide is read-only
+# The default is "local" because the forms change files on this computer: if the
+# Guide were ever opened up on a network, strangers should not be able to edit it.
+EDITING = os.environ.get("GUIDE_EDITING", "local").lower()
 
 # Amazon Associates settings: which Amazon store the links go to, and the
 # tracking ID that credits purchases to the account.
@@ -49,6 +68,10 @@ PRODUCT_KINDS = {
 }
 
 app = Flask(__name__)
+# The secret key signs the session cookie, which holds the form protection token
+# and the "Saved" messages. Without GUIDE_SECRET_KEY a random key is made at each
+# start: fine for one computer, though it signs everyone out of open forms on restart.
+app.secret_key = os.environ.get("GUIDE_SECRET_KEY") or secrets.token_hex(32)
 
 
 # --- Helpers available inside templates --------------------------------------
@@ -343,6 +366,150 @@ def api_entry(slug: str):
     data["mentions"] = [r[0] for r in db().execute(
         "SELECT e.slug FROM entry_links l JOIN entries e ON e.id = l.to_id WHERE l.from_id = ?", (row["id"],))]
     return jsonify(data)
+
+
+# --- Adding and editing entries ------------------------------------------------
+# The forms post back to the same address they were shown at. On success the
+# browser is redirected to the entry (the "Post/Redirect/Get" pattern), so
+# refreshing the page afterwards does not submit the form a second time.
+
+@app.template_global()
+def can_edit() -> bool:
+    """Whether this visitor may add and edit entries (see EDITING above)."""
+    if EDITING == "on":
+        return True
+    if EDITING == "local":
+        # remote_addr is the address the request came from. 127.0.0.1 and ::1
+        # mean "this same computer".
+        return request.remote_addr in ("127.0.0.1", "::1")
+    return False
+
+
+@app.template_global()
+def csrf_token() -> str:
+    """A random token stored in the visitor's session and placed in every form.
+
+    It protects against cross-site request forgery: another website could make
+    a visitor's browser post to this one, but it cannot read the token, so its
+    forged form is rejected by check_csrf().
+    """
+    if "csrf" not in session:
+        session["csrf"] = secrets.token_urlsafe(32)
+    return session["csrf"]
+
+
+def check_csrf() -> None:
+    sent = request.form.get("csrf", "")
+    # compare_digest takes the same time whatever the input, so the token cannot
+    # be guessed one character at a time by measuring response times.
+    if not sent or not secrets.compare_digest(sent, session.get("csrf", "")):
+        abort(400, "The form expired. Go back, reload the page and try again.")
+
+
+def entry_from_form() -> editor.Entry:
+    """Read the submitted form into an Entry. Bad numbers become 0, which
+    validate() then reports as "choose a book" instead of crashing."""
+    def number(value) -> int:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return 0
+
+    return editor.Entry(
+        name=request.form.get("name", ""),
+        category=request.form.get("category", ""),
+        book=number(request.form.get("book")),
+        books=[number(b) for b in request.form.getlist("books")],
+        summary=request.form.get("summary", ""),
+        body=request.form.get("body", ""),
+        story=request.form.get("story", ""),
+        tip=request.form.get("tip", ""),
+    )
+
+
+def save_entry(entry: editor.Entry, old_name: str | None = None) -> editor.Entry:
+    """Save through editor.save(), after closing this request's database connection.
+
+    Saving rebuilds guide.db and swaps the new file into place. Windows will not
+    replace a file that is still open, and the edit page has already opened the
+    database to look the entry up, so the connection must be closed first.
+    (db() simply opens a fresh one if the page needs it again afterwards.)
+    """
+    close_db(None)
+    return editor.save(pathlib.Path(DATA_DIR), pathlib.Path(DB_PATH), entry, old_name)
+
+
+def render_form(entry: editor.Entry, old_name: str | None, errors: list[str] = (), status: int = 200):
+    return render_template(
+        "edit.html", entry=entry, old_name=old_name, errors=errors,
+        old_slug=editor.build_db.slug(old_name) if old_name else None,
+    ), status
+
+
+@app.route("/entry/new", methods=["GET", "POST"])
+def new_entry():
+    """Add an entry.
+
+    /entry/new could also match /entry/<slug> with slug "new". Flask always
+    prefers a fixed path over one with a variable, so this route wins. That
+    also means no entry can have the slug "new": validate() would allow it,
+    but its page would be unreachable, so it is reserved in editor.py."""
+    if not can_edit():
+        abort(403)
+    if request.method == "GET":
+        # Prefill the name when coming from a search that found nothing.
+        return render_form(editor.Entry(name=request.args.get("name", "")), None)
+    check_csrf()
+    entry = entry_from_form()
+    try:
+        saved = save_entry(entry)
+    except editor.EntryError as e:
+        # 400 tells the browser (and tests) the submission was not accepted.
+        return render_form(entry, None, e.errors, 400)
+    flash(f"Added {saved.name} to the Guide.")
+    return redirect(url_for("entry", slug=saved.slug))
+
+
+@app.route("/entry/<slug>/edit", methods=["GET", "POST"])
+def edit_entry(slug: str):
+    """Edit an entry, including renaming it."""
+    if not can_edit():
+        abort(403)
+    row = db().execute("SELECT name FROM entries WHERE slug = ?", (slug,)).fetchone()
+    if row is None:
+        abort(404)
+    old_name = row["name"]
+    if request.method == "GET":
+        # Load from the text files, not the database, because the files are what
+        # gets saved: this way the form always starts from exactly what is on disk.
+        entry = editor.load(pathlib.Path(DATA_DIR), old_name)
+        if entry is None:
+            abort(404)
+        return render_form(entry, old_name)
+    check_csrf()
+    entry = entry_from_form()
+    try:
+        saved = save_entry(entry, old_name)
+    except editor.EntryError as e:
+        return render_form(entry, old_name, e.errors, 400)
+    flash(f"Saved your changes to {saved.name}.")
+    return redirect(url_for("entry", slug=saved.slug))
+
+
+@app.errorhandler(400)
+def bad_request(e):
+    """Show rejected form posts (for example an expired form) inside the device."""
+    return render_template(
+        "error.html", code=400, heading="Form not accepted", message=e.description
+    ), 400
+
+
+@app.errorhandler(403)
+def forbidden(_e):
+    return render_template(
+        "error.html", code=403, heading="Editing is switched off",
+        message="Entries can only be added or edited on the computer the Guide is running on.",
+    ), 403
 
 
 @app.errorhandler(404)

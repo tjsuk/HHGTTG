@@ -11,7 +11,8 @@
 {% block crumb %}INDEX · <span id="count">{{ entries|length }}</span> ENTRIES{% endblock %}
 {% block view %}
 <h2>Index</h2>
-<p class="meta">Every major name, place and thing from the six novels. Entries marked ◆ have their own drawing. Book filters show everything that appears in that book. <a href="{{ url_for('book_list') }}">Read about the books</a> or visit the <a href="{{ url_for('shop') }}">shop</a>.</p>
+<p class="meta">Every major name, place and thing from the six novels. Entries marked ◆ have their own drawing. Book filters show everything that appears in that book. <a href="{{ url_for('book_list') }}">Read about the books</a> or visit the <a href="{{ url_for('shop') }}">shop</a>.
+  {% if can_edit() %}<a href="{{ url_for('new_entry') }}">Add an entry</a>.{% endif %}</p>
 
 {# Each chip keeps the other active filters in its link, so picking a category
    does not clear the chosen book or text. "q or None" drops an empty q from the URL.
@@ -51,5 +52,6 @@
 </ul>
 {# Always rendered, hidden when there are results, so guide.js can show it when
    typing filters everything out. #}
-<p class="empty" id="empty" {% if entries %}hidden{% endif %}>Nothing in the index matches. The Guide apologises for the inconvenience.</p>
+<p class="empty" id="empty" {% if entries %}hidden{% endif %}>Nothing in the index matches. The Guide apologises for the inconvenience.
+  {% if can_edit() and q %}<a href="{{ url_for('new_entry', name=q) }}">Add “{{ q }}” as a new entry</a>.{% endif %}</p>
 {% endblock %}
