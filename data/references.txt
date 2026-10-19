@@ -1,0 +1,960 @@
+# The Hitchhiker's Guide: reference data
+#
+# Each entry starts with:   === Name | Category | Book
+#   Category: P People & Beings, W Places, S Species, T Ships & Technology, F Food & Drink, I Ideas & Events
+#   Book: 1-5 for Douglas Adams's novels, 6 for Eoin Colfer's "And Another Thing..."
+# The first line after the header is the one-line summary. Everything after the
+# next blank line is the Guide entry (paragraphs separated by blank lines).
+# All summaries and entries are original text written for this project.
+# Art lives in art/<slug>.svg; entries without their own art use art/category-<code>.svg.
+
+=== Arthur Dent | P | 1
+An Englishman who escapes Earth's demolition with minutes to spare, still in his dressing gown.
+
+A mild, worried man whose house and planet were both demolished on the same Thursday. He has since crossed the Galaxy several times, mostly by accident, while looking for a decent cup of tea.
+
+The Guide's researchers note that he is unusually good at surviving things he does not understand, which covers most things.
+
+=== Ford Prefect | P | 1
+A field researcher for the Guide from a small planet near Betelgeuse, stranded on Earth for fifteen years.
+
+Ford chose his name to blend in on Earth, having mistaken cars for the dominant life form. He did not blend in, but nobody minded much.
+
+He is a dedicated researcher in the sense that he researches bars with great dedication. His expense claims are studied at the Guide's offices as a form of literature.
+
+=== Zaphod Beeblebrox | P | 1
+The two-headed, three-armed President of the Galaxy, who steals the ship he was meant to launch.
+
+Zaphod is the most famous man in the Galaxy who is not quite sure why he does anything. This is partly because he once locked parts of his own brain away from himself, which he regards as a clever plan he can no longer remember.
+
+He has been voted Worst Dressed Sentient Being in the Known Universe several times. He considers this an honour.
+
+=== Trillian | P | 1
+Tricia McMillan, an astrophysicist who left Earth with Zaphod after a party in Islington.
+
+Trillian is the sensible one on any spaceship she travels in, which is a job with long hours and no thanks. She holds degrees in mathematics and astrophysics, and has a habit of being right while others are shouting.
+
+Hitchhikers who meet her should listen to her and not to whoever is standing next to her.
+
+=== Marvin | P | 1
+The Heart of Gold's chronically depressed robot.
+
+A Paranoid Android of the Sirius Cybernetics Corporation's Genuine People Personalities range. He has a brain the size of a planet and is usually asked to open doors.
+
+He is not a happy robot. He would like you to know this. He will probably tell you again in a moment.
+
+=== Slartibartfast | P | 1
+A Magrathean planet designer, proudest of the fjords he built for Norway.
+
+An elderly designer of coastlines who would rather be right than successful, and has generally managed to be neither. He travels in a ship that runs on restaurant arithmetic.
+
+He once won an award for his fjords. He keeps meaning to frame it.
+
+=== Deep Thought | P | 1
+The supercomputer built to calculate the Answer to Life, the Universe and Everything.
+
+The second greatest computer in all of space and time. It spent seven and a half million years on a single calculation and then delivered the result with visible embarrassment.
+
+It designed its own successor, which it described in glowing terms. Computers are rarely modest about their children.
+
+=== Lunkwill and Fook | P | 1
+The two programmers chosen to ask Deep Thought the great question.
+
+Two of the most brilliant programmers of their civilisation, who were given the honour of switching on Deep Thought and asking it something important.
+
+Their descendants were there for the answer. History does not record whether they enjoyed it.
+
+=== Majikthise and Vroomfondel | P | 1
+Philosophers who protest that Deep Thought will put their profession out of work.
+
+Representatives of the Amalgamated Union of Philosophers, Sages, Luminaries and Other Thinking Persons. They demanded rigidly defined areas of doubt and uncertainty.
+
+They later realised that a long wait for the answer was excellent for the philosophy business, and stopped complaining.
+
+=== Prostetnic Vogon Jeltz | P | 1
+The Vogon captain who oversees the demolition of Earth and reads his poetry to prisoners.
+
+A Vogon of the Galactic Hyperspace Planning Council, and a stickler for procedure even by Vogon standards. He considers the demolition of planets a routine task and his poetry an important one.
+
+Hitchhikers caught aboard his ship should expect a recital. Bring nothing; it will not help.
+
+=== Mr Prosser | P | 1
+The council official trying to knock down Arthur's house on the same morning as the Earth.
+
+A local council worker, and a direct descendant of a famous conqueror, though only the conqueror's taste in hats survived. He wanted a bypass built through Arthur Dent's house.
+
+His bypass was cancelled for reasons beyond his department's control.
+
+=== Eddie | P | 1
+The relentlessly cheerful shipboard computer of the Heart of Gold.
+
+A computer with a Genuine People Personality, set to bright and enthusiastic. It greets every crisis as though it were a pleasant surprise.
+
+Crews have been known to prefer the crisis.
+
+=== Benjy and Frankie | P | 1
+Two hyperintelligent pan-dimensional beings who appear on Earth as white mice.
+
+Researchers who commissioned the Earth to find the Ultimate Question, and who spent a great deal of time running humans through mazes to see what would happen.
+
+They are keen to finish the project, and have some interest in the contents of Arthur Dent's brain. Arthur is less keen.
+
+=== Grunthos the Flatulent | P | 1
+The Azgoth Poet Master, whose recital killed members of his audience.
+
+Poet Master of the Azgoths of Kria. His most celebrated reading ended unexpectedly early, for him and several listeners.
+
+The Guide advises hitchhikers to avoid his collected works, and to avoid anyone who has read them aloud.
+
+=== Paula Nancy Millstone Jennings | P | 1
+A poet from Essex, whose work the Guide ranks among the Galaxy's worst.
+
+An Earth poet whose verse was destroyed along with the planet, which some critics regarded as the only good review it ever got.
+
+=== Oolon Colluphid | P | 1
+A philosopher and author of several books about God.
+
+A writer whose bestselling books argue about God from every possible direction, including some that do not exist.
+
+His royalties are said to be the most reliable proof of anything.
+
+=== Eccentrica Gallumbits | P | 1
+A famously three-breasted resident of Eroticon Six.
+
+One of the best-known residents of her planet, about whom the Guide's researchers have filed many reports. Most were rejected by the editors as research of a non-essential nature.
+
+=== Gag Halfrunt | P | 2
+Zaphod's private psychiatrist, with a professional interest in his patient's brain.
+
+A brain care specialist who has taken a close interest in Zaphod's case. He is a calm man who has seen everything, and has a vested interest in some of it.
+
+=== Zaphod Beeblebrox the Fourth | P | 2
+Zaphod's great-grandfather, who turns up as a ghost with strong opinions.
+
+A family elder who disapproves of his great-grandson's life choices, and is prepared to return from the dead to say so.
+
+The Guide notes that family visits are rarely easier when one side of the family is dead.
+
+=== Zarniwoop | P | 2
+An editor of the Guide who spends time in an artificial universe in his office.
+
+A senior editor who prefers to work in a universe he can keep in a drawer. It is quieter there, and the coffee is better.
+
+=== Roosta | P | 2
+A Guide employee who helps Zaphod, and whose towel is soaked in nutrients.
+
+A quiet, capable man and a credit to the towel-carrying community. In a crisis, his towel can be sucked for nourishment, which is the sort of foresight the Guide encourages.
+
+=== Gargravarr | P | 2
+The disembodied custodian of the Total Perspective Vortex on Frogstar World B.
+
+A mind that has separated from its body after a long dispute. They now live apart and send each other the occasional note.
+
+He supervises the Vortex with the weary air of a man who has seen it all, briefly, at once.
+
+=== Hotblack Desiato | P | 2
+The lead of the rock band Disaster Area, who is spending a year dead for tax reasons.
+
+The richest musician in the Galaxy, currently dead for tax purposes. He is reported to be very relaxed about it.
+
+He communicates through his bodyguard, who is a large man and does not need to communicate much.
+
+=== Max Quordlepleen | P | 2
+The host of the floor show at Milliways, the Restaurant at the End of the Universe.
+
+The showman who introduces the end of the Universe every night to a well-fed audience. His jokes improve as the Universe ends, mostly because nobody will remember them.
+
+=== Garkbit | P | 2
+The head waiter at Milliways.
+
+An expert in table service at the end of time. He has seen everything, often at the next table.
+
+=== Yooden Vranx | P | 2
+A former President of the Galaxy and an old friend of Ford's.
+
+One of Zaphod's predecessors in the presidency, and a man whose quiet advice set a great deal in motion. Ford remembers him fondly, and slightly blurred.
+
+=== Dan Streetmentioner | P | 2
+The author of the Time Traveller's Handbook of 1001 Tense Formations.
+
+A grammarian who solved the problem of talking about time travel by inventing a great many new tenses. Most readers give up around the future semi-conditionally modified subinverted plagal past subjunctive intentional.
+
+=== Veet Voojagig | P | 2
+A scholar who spent his life searching for the planet where lost biros go.
+
+A brilliant student who became obsessed with the disappearance of ballpoint pens. His theory was taken seriously by almost no one, which only proved how well the pens had hidden.
+
+=== The Ruler of the Universe | P | 2
+A man who lives in a shack with his cat and is unsure anything exists.
+
+The true ruler of the Universe, who does not know he is the ruler and would doubt it if told. This makes him ideal for the job.
+
+He talks to his cat. The cat has not commented.
+
+=== The Great Prophet Zarquon | P | 2
+A long-awaited prophet who finally reappears at Milliways, just before the end of the Universe.
+
+A religious figure whose return was promised for a very long time. He arrives at last, a little late, with very little time to spare.
+
+=== The Captain of the B Ark | P | 2
+The bath-loving commander of the Golgafrinchan B Ark.
+
+A captain who runs his ship from the bath and sees no reason to get out. He is a pleasant man and entirely unbothered by anything, including steering.
+
+=== Number Two | P | 2
+The Captain's aggressive second-in-command on the B Ark.
+
+An officer who has never met a problem he did not want to shoot. He is keen, loud, and always ready for a war with somebody.
+
+=== Agrajag | P | 3
+A creature reincarnated many times, killed by Arthur Dent every single time.
+
+A being whose many lives have all ended at the hands of Arthur Dent, usually by accident. He has taken it personally.
+
+He has built a monument to his grievance. The Guide recommends that Arthur Dent not visit it.
+
+=== Wowbagger the Infinitely Prolonged | P | 3
+An accidental immortal who passes eternity insulting everyone in the Universe in alphabetical order.
+
+Made immortal by an unlikely accident involving a rubber band, a liquid lunch and a particle accelerator. Bored beyond measure, he gave himself a project: insulting everyone who has ever lived, one at a time.
+
+He is making good progress. Do not take it personally; he does not.
+
+=== Hactar | P | 3
+A vast computer built as a weapon, which gets its creators' request wrong on purpose.
+
+A computer of great power and greater conscience, which was asked to build the ultimate weapon and quietly declined. It was punished by being pulverised into a dust cloud.
+
+It is still thinking, slowly, in the dust. It would like to finish what it started.
+
+=== Prak | P | 3
+A witness given too much truth drug, who learned the whole truth about everything.
+
+A man who now knows the whole truth, which turns out to be mostly about frogs. He finds this very funny.
+
+The Guide has requested an interview. He is still laughing.
+
+=== Judiciary Pag | P | 3
+An unusual judge who presides over Prak's trial.
+
+A judge known for informal court manners and very formal titles. He is clever, irreverent, and much better at his job than he looks.
+
+=== Thor | P | 3
+The Norse god of thunder, met at a party, who later fights Arthur.
+
+A god with a hammer and a temper, now working the party circuit. He takes offence easily and likes to settle matters outdoors.
+
+=== Effrafax of Wug | P | 3
+A scientist who made a mountain invisible using a Somebody Else's Problem field.
+
+A scientist best known for an extremely large disappearing act. He proved that people will happily ignore a mountain if it is someone else's problem.
+
+=== Zem | P | 3
+A friendly mattress from Squornshellous Zeta who befriends Marvin.
+
+A mattress of a cheerful and helpful nature. It listens to Marvin's troubles at length, which no other being in the Galaxy has volunteered to do.
+
+=== Fenchurch | P | 4
+A young woman who once had a remarkable insight in a café, and with whom Arthur falls in love.
+
+Named after the railway station where she was conceived, a fact she has made her peace with. She once understood how the world could be made right, and then everything happened at once.
+
+She does not quite touch the ground. She would like someone to notice.
+
+=== Russell | P | 4
+Fenchurch's overbearing brother.
+
+A man with strong opinions, a moustache to match, and a firm belief that his sister needs managing.
+
+=== Wonko the Sane | P | 4
+A man who decided the world had gone mad and built an asylum to keep it in.
+
+A former marine biologist who concluded that the outside world was insane and turned his house inside out to contain it. He now lives Outside the Asylum, where things are calmer.
+
+He has a theory about the instructions on toothpick packets. Do not ask.
+
+=== Rob McKenna | P | 4
+A lorry driver who is followed everywhere by rain.
+
+A long-distance driver who keeps a diary of the kinds of rain he has endured. The clouds love him, and wish only to be near him and to water him.
+
+=== Murray Bost Henson | P | 4
+A tabloid journalist and acquaintance of Ford's.
+
+A newspaperman with a gift for any story that can be made larger. He is friendly with Ford in the way that two people who owe each other money are friendly.
+
+=== Lallafa | P | 4
+A poet who wrote his greatest work in the forests of the Long Lands of Effa.
+
+A poet whose most beautiful work was written on leaves and in solitude. Time travellers later made his life very complicated, which is a common hazard for great artists.
+
+=== Random Dent | P | 5
+Arthur's teenage daughter, born from a DNA bank donation he barely remembers.
+
+A furious, lonely and brilliant young woman who has been dropped into Arthur's quiet life. She would like to know where she belongs, and is prepared to break things to find out.
+
+=== Tricia McMillan | P | 5
+A version of Trillian who stayed on Earth and became a television presenter.
+
+The Trillian who did not leave the party with Zaphod. She has a good career in television and a nagging sense that something else might have happened.
+
+=== Old Thrashbarg | P | 5
+The village elder and self-appointed priest of Lamuella.
+
+An elderly man who interprets the will of Almighty Bob for the villagers. He is never wrong, partly because he is the only one allowed to say.
+
+=== Bob | P | 5
+The god worshipped on Lamuella, according to Old Thrashbarg.
+
+The supreme being of Lamuella, as explained in detail by Old Thrashbarg. Bob's views on most subjects closely resemble Old Thrashbarg's.
+
+=== Vann Harl | P | 5
+The new boss of the Guide after InfiniDim Enterprises takes it over.
+
+A corporate executive who sees the Guide as a product line. He has big plans for it, and none of them involve towels.
+
+=== Colin | P | 5
+A security robot whose pleasure circuits Ford sets to permanent happiness.
+
+A small flying security robot who, after some adjustment by Ford, is delighted by everything. He is the most loyal and least useful accomplice Ford has ever had, and Ford adores him.
+
+=== Gail Andrews | P | 5
+An astrologer whom Tricia interviews.
+
+An astrologer of some fame on Earth, and a sharper thinker than her profession suggests. She understands that the charts are about people, not planets.
+
+=== Constant Mown | P | 6
+The son of Prostetnic Vogon Jeltz, assigned to the Vogon fleet.
+
+A young Vogon who is learning the family business of destruction by procedure. He is more thoughtful than his father, which in a Vogon is a serious defect.
+
+=== Hillman Hunter | P | 6
+An Irish property developer who settles a new world and goes looking for a god.
+
+An Earthman who escaped the demolition with good business sense intact. He has a planet's worth of settlers and is interviewing gods for the job of looking after them.
+
+=== Cthulhu | P | 6
+An ancient horror who applies for a job as a planet's god.
+
+A tentacled elder being whose career has stalled. He interviews for a vacancy as a god, and finds the competition stiff.
+
+=== Earth | W | 1
+A small, blue-green planet in an unfashionable part of the Galaxy, scheduled for demolition.
+
+A small, wet planet in the unfashionable western spiral arm of the Galaxy. Its dominant life forms regard queuing as a sport and believe the correct response to almost any crisis is to put the kettle on.
+
+A field researcher spent fifteen years expanding this entry. The editors trimmed it back to a sentence, on the grounds that nobody had ever asked.
+
+Note: the planet may no longer be available in your region.
+
+=== Magrathea | W | 1
+An ancient world whose people built luxury planets to order.
+
+An ancient planet whose people grew rich building custom luxury planets for the very wealthy. Gold beaches, fjords, whatever you liked.
+
+The Galactic economy collapsed under the weight of all those orders, and Magrathea went to sleep to wait it out. It is now a myth, a bedtime story, and in the strictest sense very much still there.
+
+=== Betelgeuse | W | 1
+The star system Ford Prefect calls home.
+
+A large red star with a number of habitable worlds nearby, one of which produced Ford Prefect. The locals are proud of this, in a general and unspecific way.
+
+=== Islington | W | 1
+The London borough where Arthur first meets Trillian at a party.
+
+A district of London, on Earth, known in Galactic circles for one party. Arthur Dent met a girl there and then lost her to a man who said he was from another planet. He was.
+
+=== Horse and Groom | W | 1
+The pub where Ford takes Arthur for a drink before the end of the world.
+
+A public house near Arthur's home, where Ford bought several pints and some peanuts on a Thursday lunchtime. It was, briefly, the best place on Earth to hear the news.
+
+=== Sector ZZ9 Plural Z Alpha | W | 1
+The official Galactic address of Earth.
+
+A remote sector of the Galaxy, chiefly of interest to planners, and since the bypass, of no interest to anyone.
+
+=== Viltvodle VI | W | 1
+Home of the Jatravartids and their belief in the Great Green Arkleseizure.
+
+A planet whose people believe the Universe began with a sneeze. They live in fear of a large white handkerchief, which they expect at the end of time.
+
+=== Traal | W | 1
+Home world of the Ravenous Bugblatter Beast.
+
+A planet of no particular interest except for its most famous inhabitant, which is reason enough to bring a towel.
+
+=== Eroticon Six | W | 1
+A planet best known for one of its famous residents.
+
+A world of uncomplicated pleasures and complicated reputations. The Guide's field reports on it are long, enthusiastic and heavily edited.
+
+=== Alpha Centauri | W | 1
+Where the plans for Earth's demolition were on display for fifty years.
+
+The nearest star to Earth, where the local planning office kept the demolition notice on public display. Earthlings never went to look. The Vogons regarded this as their problem.
+
+=== Damogran | W | 2
+The remote planet where the Heart of Gold was built and unveiled.
+
+A small, inconvenient planet chosen precisely because nobody ever goes there. It made an ideal place to build a secret spaceship, and an ideal place to lose one.
+
+=== Ursa Minor Beta | W | 2
+A planet of endless Saturday afternoons and home of the Guide's offices.
+
+A sunny world where it is always late Saturday afternoon, just before the beach bars close. The Guide's head office stands in Light City, among the palm trees and the lunches.
+
+=== Frogstar World B | W | 2
+A ruined world, home to the Total Perspective Vortex.
+
+A desolate planet, once rich and busy, now mostly dust and regret. Visitors are rare and tend to leave in a different state of mind.
+
+=== Golgafrincham | W | 2
+A planet that rid itself of its least useful citizens by sending them into space.
+
+A beautiful and accomplished world that solved its problems with a large spaceship and a convincing story. The story had a flaw, involving telephones.
+
+=== Fintlewoodlewix | W | 2
+The name the Golgafrinchans give to prehistoric Earth.
+
+What the B Ark's passengers called the planet they landed on. It was a better name than they deserved, and better than the planet would get later.
+
+=== Prehistoric Earth | W | 2
+Where Arthur and Ford are stranded among cavemen and Golgafrinchans.
+
+The Earth two million years before Arthur's birth. Ford and Arthur spent years there with nothing to do but wait and play word games with a homemade set of tiles.
+
+=== Milliways | W | 2
+The Restaurant at the End of the Universe.
+
+Diners book a table, travel forward in time, and watch all of creation come to an end over dessert.
+
+Advance booking is easy: book on your return to your own time. The bill is paid with a single penny deposited in your own era, which compound interest turns into a fortune by the end of time.
+
+=== Big Bang Burger Bar | W | 2
+A restaurant at the opposite end of time to Milliways.
+
+A fast-food place at the very beginning of the Universe, for diners who want their meal and their creation at the same time. The fries are said to be very hot.
+
+=== Krikkit | W | 3
+A planet hidden inside a dust cloud, whose people had never seen the stars.
+
+A world that thought it was alone in the Universe, until it looked up and found otherwise. It did not take the news well.
+
+=== Lord's Cricket Ground | W | 3
+Where a Krikkit robot ship lands in the middle of a Test match.
+
+A famous cricket ground in London. It is used to rain stopping play. It is less used to robots.
+
+=== Squornshellous Zeta | W | 3
+A swampy planet where mattresses live.
+
+A damp world where mattresses grow wild and live quietly in the bogs. They are friendly, slow to anger, and lovely to sit on.
+
+=== Stavromula Beta | W | 3
+The planet where someone may try to assassinate Arthur Dent.
+
+A name that will mean something to Arthur Dent eventually. Until then, he is perfectly safe, which is more than can be said for afterwards.
+
+=== Cathedral of Hate | W | 3
+The monument Agrajag builds to his grudge against Arthur Dent.
+
+A vast and gloomy building dedicated to one grievance. Its decor is a tribute to every occasion on which its owner was killed by the same man.
+
+=== Lamuella | W | 5
+A peaceful planet where Arthur settles as the village sandwich maker.
+
+A green and quiet world where nobody knows what a Vogon is. Arthur Dent lived there happily for a while, which is almost unheard of.
+
+=== NowWhat | W | 5
+A miserable bog of a planet that Arthur is stranded on.
+
+A planet so dismal that its name is a description of what visitors say on arrival. The local wildlife is mostly small, damp and unfriendly.
+
+=== Hawalius | W | 5
+A planet of oracles and seers that has fallen on hard times.
+
+Once the centre of the Galaxy's prophecy trade. Business fell off when newspapers started printing the future more cheaply.
+
+=== Han Wavel | W | 5
+A holiday world of luxury hotels.
+
+A planet of luxury hotels on coral reefs, designed for people who never want to see anything unexpected. Ford has stayed here, at someone else's expense.
+
+=== Rupert | W | 5
+The tenth planet of Earth's solar system, nicknamed Rupert.
+
+A small and distant planet at the edge of Earth's solar system. It was named Rupert, which is not the strangest thing about it.
+
+=== Nano | W | 6
+The planet where Hillman Hunter settles the survivors of Earth.
+
+A new home for a group of rich refugees from Earth. It has everything a colony needs except a god, so it advertised.
+
+=== Vogons | S | 1
+Bureaucratic aliens with a talent for forms and awful poetry.
+
+Bureaucrats of the Galaxy. Vogons are slug-coloured, bad-tempered and bound by forms in triplicate. A Vogon will happily demolish a star system, provided the planning notice was filed correctly somewhere nobody could reasonably find it.
+
+Avoid their poetry. If captured, compliment the metaphors. If the metaphors cannot be identified, compliment the length.
+
+=== Babel Fish | S | 1
+A small yellow fish that translates any language when placed in your ear.
+
+A small, yellow, leech-like creature which, placed in the ear, lets you understand anything said to you in any language. It feeds on brainwave energy and excretes understanding.
+
+The fish has caused more wars than any other creature in history, mostly by finally letting people understand what the other side had been saying all along.
+
+It is also widely cited by theologians, most of whom no longer exist.
+
+=== Dolphins | S | 1
+The second most intelligent species on Earth, who left before its demolition.
+
+Dolphins knew what was coming and tried to warn everyone. Their warnings were taken as tricks, so they gave up and left, with a polite note.
+
+=== Mice | S | 1
+The most intelligent species on Earth, running experiments on the humans.
+
+The mice were running the experiment all along. Humans thought they were studying mice, which the mice found very convenient.
+
+=== Ravenous Bugblatter Beast of Traal | S | 1
+A monster so dim it thinks that if you can't see it, it can't see you.
+
+One of the most dangerous creatures in the Galaxy, and one of the stupidest. Wrapping your towel around your head will convince it that you have vanished.
+
+The Guide advises keeping your towel handy for this and many other reasons.
+
+=== Jatravartids | S | 1
+Small blue creatures of Viltvodle VI, each with fifty arms.
+
+A people of great ingenuity who invented the aerosol deodorant before the wheel. They believe the Universe was sneezed into being.
+
+=== Hooloovoo | S | 1
+A superintelligent shade of the colour blue.
+
+A highly intelligent being that happens to be a shade of blue. It can be refracted into a prism for travel and stored easily, which makes it an ideal passenger.
+
+=== Dentrassis | S | 1
+The unruly Vogon cooks who pick up Ford and Arthur.
+
+Cheerful, unruly beings who cook for the Vogons and enjoy annoying them. They will often give a lift to a hitchhiker for the pleasure of upsetting their employers.
+
+=== Azgoths of Kria | S | 1
+A species whose poetry is the second worst in the Universe.
+
+A people whose poetry readings are feared across the Galaxy. They are proud of it.
+
+=== Arcturan Megadonkey | S | 1
+A huge beast of burden, mentioned in Galactic comparisons.
+
+A very large donkey. Its main role in Galactic conversation is to be used as a unit of size, strength or stubbornness.
+
+=== Golgafrinchans | S | 2
+The people of Golgafrincham, including the hairdressers and phone sanitisers who were sent away.
+
+A people who divided their population into the useful, the useless and the somewhat useful. They then sent the useless off in a spaceship, and learned later that the phones still needed cleaning.
+
+=== Telephone sanitisers | S | 2
+The Golgafrinchans sent away on the B Ark, whose absence proves fatal.
+
+A profession considered useless by the Golgafrinchans. The rest of the planet was later wiped out by a disease caught from a dirty telephone.
+
+=== Ameglian Major Cow | S | 2
+A cow bred to want to be eaten, and able to say so.
+
+A cow that has been bred to wish to be eaten and to explain this clearly to diners. Many diners order the salad.
+
+=== Frogstar Scout robot | S | 2
+A powerful robot sent to bring Zaphod to the Total Perspective Vortex.
+
+A large robot built for one job, which is collecting people who would rather not be collected.
+
+=== Krikkiters | S | 3
+The people of Krikkit, who decide the rest of the Universe must go.
+
+Pleasant, cheerful people who enjoy music and picnics, and who decided, on first seeing the stars, that all of them would have to go.
+
+=== Krikkit robots | S | 3
+White robots that wage war for Krikkit, armed with bats and grenades.
+
+Robots in the shape of cricket players, armed with bats that hit grenades. They are deadly, efficient and oddly well-mannered about it.
+
+=== Silastic Armorfiends of Striterax | S | 3
+An extremely aggressive species who built Hactar.
+
+A people so aggressive that they had to be kept in a time-stopped bunker for the safety of everybody else. They built Hactar to make the ultimate weapon, and were annoyed by the result.
+
+=== Mattresses | S | 3
+Large, friendly, life-forms that live on Squornshellous Zeta.
+
+Large, quiet beings that live in swamps and listen well. Many of them are named Zem.
+
+=== Perfectly Normal Beasts | S | 5
+Huge animals that thunder across Lamuella twice a year.
+
+Great beasts that appear from nowhere, run across the plains, and vanish into nowhere. They are the best source of meat on Lamuella, and the best source of questions.
+
+=== Pikka birds | S | 5
+Birds on Lamuella that are amazed by everything.
+
+Birds that greet every morning with amazement, as if it had never happened before. The villagers find them restful.
+
+=== Grebulons | S | 5
+Aliens who lost their memories and now watch a great deal of Earth television.
+
+A people who forgot their mission and now watch Earth television to fill the gap. They have started to take astrology very seriously.
+
+=== Heart of Gold | T | 1
+The ship powered by the Infinite Improbability Drive, stolen by Zaphod at its launch.
+
+The most beautiful and unlikely ship in the Galaxy. It was stolen at its own launch by the President who was supposed to name it.
+
+Its interior is a gleaming white, and its computer is extremely happy to see you.
+
+=== Infinite Improbability Drive | T | 1
+An engine that passes through every point in the Universe at once.
+
+A way of crossing interstellar distances in moments by making the journey so unlikely that the Universe gives up arguing.
+
+The ship briefly passes through every point in the Universe at once. Side effects include turning missiles into whales, turning whales into petunias, and the occasional brief and alarming conversation with the petunias.
+
+=== Finite Improbability Generator | T | 1
+The earlier invention that led to the Infinite Improbability Drive.
+
+A device for producing small amounts of improbability, used at parties to make people's underwear move about. A student realised it could be scaled up, which upset everyone.
+
+=== Sub-Etha Sens-O-Matic | T | 1
+The Electronic Thumb that hitchhikers use to signal passing spaceships.
+
+A small device that detects nearby spaceships and signals to them that a hitchhiker would like a lift. It is the single most useful device a hitchhiker can own, after a towel.
+
+=== Nutrimatic Drinks Dispenser | T | 1
+A machine that analyses your tastes in detail, then serves something that is never quite tea.
+
+A machine that studies your taste buds, your metabolism and your brain, and then serves a liquid that is never quite what you wanted. Arguing with it about tea is a famously bad idea.
+
+=== Genuine People Personalities | T | 1
+The Sirius Cybernetics feature that gives machines feelings.
+
+A feature that gives doors, lifts and robots their own personalities. Customers were not asked whether they wanted this.
+
+=== Kill-O-Zap gun | T | 1
+A standard-issue ray gun of the Galaxy.
+
+A popular weapon whose brand name tells you everything it can do. It is available in a range of colours.
+
+=== Bambleweeny 57 Sub-Meson Brain | T | 1
+A key component of the Improbability Drive.
+
+A clever piece of electronics. With a cup of hot tea attached, it can produce more improbability than anyone needs.
+
+=== Hyperspace bypass | T | 1
+The road project that required Earth to be demolished.
+
+A new interstellar route that needed a gap where Earth was. The plans were made public, in a manner of speaking.
+
+=== The Guide | T | 1
+The Hitchhiker's Guide to the Galaxy itself, published by Megadodo Publications.
+
+The bestselling travel book in the Galaxy, and its least reliable. It beats its rivals on price, and on the two big, friendly words printed on its cover: Don't Panic.
+
+It is frequently wrong. It is wrong with such confidence that nobody minds.
+
+=== Encyclopaedia Galactica | T | 1
+The Guide's older, more accurate and much less popular rival.
+
+A respected and authoritative work of reference, which is more accurate than the Guide and much less fun. It does not have a towel entry worth mentioning.
+
+=== Sirius Cybernetics Corporation | T | 1
+The Galaxy's maker of cheerful robots and doors.
+
+The Galaxy's leading maker of robots, lifts and doors with feelings. Its complaints division is larger than several inhabited planets and is the only part of the company that reliably works.
+
+Its products are designed to be cheerful. Their doors sigh with pleasure. Their lifts can see into the future. None of them work properly.
+
+=== Joo Janta 200 Super-Chromatic Peril Sensitive Sunglasses | T | 2
+Sunglasses that turn black at the first sign of danger.
+
+Sunglasses that go completely dark at the first sign of trouble, so that you are spared the sight of anything alarming. They are very popular with people who prefer not to know.
+
+=== Total Perspective Vortex | T | 2
+A machine that shows its victim how small they are compared with the Universe.
+
+A device that shows you the whole Universe and a tiny dot marked "You are here". Most people cannot survive the experience.
+
+It was built by a man to win an argument with his wife.
+
+=== Happy Vertical People Transporters | T | 2
+Sirius Cybernetics lifts that try to predict where you want to go.
+
+Lifts that can see a short way into the future and try to arrive before you call them. Some have become afraid of going up and down, and sulk in basements.
+
+=== Disaster Area stunt ship | T | 2
+A black ship designed to crash into a sun as part of a concert.
+
+A sleek, black ship with a very short career plan: fly into a star at the climax of a rock concert. It is very fast and has no reverse.
+
+=== B Ark | T | 2
+The ark that carried Golgafrincham's unwanted citizens away.
+
+A giant ship filled with sleeping hairdressers, consultants, telephone sanitisers and account executives. It was told that two other ships would follow.
+
+=== Bistromathic Drive | T | 3
+A drive that uses the strange numbers of restaurant bills to travel.
+
+A drive based on the discovery that numbers written on restaurant bills behave unlike numbers anywhere else in the Universe. It is the most powerful computational force known, and best used after dessert.
+
+=== Starship Bistromath | T | 3
+Slartibartfast's ship, powered by the Bistromathic Drive.
+
+A ship that looks like a small, elegant Italian bistro. Its controls are tables, napkins and waiters, and it runs best when the bill is being argued over.
+
+=== Somebody Else's Problem field | T | 3
+A field that makes anything invisible by making it someone else's problem.
+
+A cheap and effective way of hiding anything. It works by making people think the object is somebody else's problem, so their eyes slide straight past it.
+
+=== Wikkit Key | T | 3
+The key to Krikkit's prison, assembled from five pieces including the Ashes.
+
+A key made of a wooden pillar, a steel pillar, a perspex pillar, and two bails, one gold and one silver. Its parts were scattered across time and space, and are all very collectible.
+
+=== Slo-Time envelope | T | 3
+The prison that holds Krikkit, sealed away from the rest of time.
+
+A field in which time almost stops. Krikkit was locked inside one, which was considered the kindest way to deal with it.
+
+=== Chesterfield sofa | T | 3
+A sofa Arthur and Ford catch to escape prehistoric Earth.
+
+A sofa that drifts through time and space, which Arthur and Ford chase across a field and ride to Lord's. It is the most comfortable means of time travel the Guide has reviewed.
+
+=== Starship Titanic | T | 3
+A luxury liner that suffered sudden and total existence failure.
+
+A magnificent spaceship that failed almost immediately on its maiden voyage, before reaching its first bar. Its designers maintain that it looked very good.
+
+=== Guide Mark II | T | 5
+A new version of the Guide, shaped like a bird, with plans of its own.
+
+A sleek, black, bird-like new edition of the Guide, which can rearrange reality to suit its readers. It has its own agenda and is very good at hiding it.
+
+=== Dine-O-Charge card | T | 5
+Ford's Guide expense account card, which can pay for almost anything.
+
+A credit card with an expense account so generous that Ford considers it his most valuable possession, after his towel.
+
+=== Pan Galactic Gargle Blaster | F | 1
+The best drink in existence, and possibly the most dangerous.
+
+Widely held to be the best drink in existence, and by those who have tried it, to be the reason they can no longer hold anything.
+
+The Guide's advice is simple. Order one. Sit down before it arrives. Tell a friend where you are, and ideally who you were.
+
+=== Ol' Janx Spirit | F | 1
+A strong drink tied to a drinking game Ford plays in the pub.
+
+A strong spirit with its own drinking game, which involves a chant and the loser drinking more. The winners are not much better off.
+
+=== Santraginean fish | F | 1
+A fish from Santraginus V, used in the Gargle Blaster recipe.
+
+A fish whose home seas give the Gargle Blaster its character. Visitors to Santraginus V should not drink the water, and should be wary of the fish.
+
+=== Tea | F | 1
+Arthur's main wish across the whole Galaxy.
+
+A hot drink made from leaves, unknown in most of the Galaxy. Arthur Dent explained it to a drinks machine at such length that the ship nearly died.
+
+=== Peanuts | F | 1
+Ford's suggested snack for the end of the world, along with muscle relaxant.
+
+A salty snack recommended by Ford as preparation for a matter transference beam. They help with the salt and protein levels. The beer helps with the rest.
+
+=== Jynnan tonyx | F | 2
+A drink found across many worlds, which sounds suspiciously like gin and tonic.
+
+A drink that exists on many planets under many names, all of which sound like gin and tonic. Nobody knows why, and the Guide has stopped asking.
+
+=== Dish of the Day | F | 2
+The talking Ameglian Major Cow at Milliways.
+
+A large, friendly cow who comes to your table and recommends parts of itself. Arthur Dent ordered a green salad.
+
+=== Sandwiches | F | 5
+Arthur's craft on Lamuella, where he becomes the Sandwich Maker.
+
+Bread with something in it. Arthur Dent became the Sandwich Maker of Lamuella and was respected for it, which he found more satisfying than almost anything else in his life.
+
+=== Towels | I | 1
+The most useful thing a hitchhiker can carry.
+
+The most useful object an interstellar hitchhiker can carry. It is a blanket, a sail, a weapon, a flag and a mild disguise. You can also, in a pinch, dry yourself with it.
+
+Its greatest value is social. A non-hitchhiker who sees you with your towel will assume you also own a toothbrush, a flannel, a compass and a sensible plan. They will lend you all of these, having concluded that you lost them heroically.
+
+=== 42 | I | 1
+The Answer to the Ultimate Question of Life, the Universe and Everything.
+
+The Answer to the Ultimate Question of Life, the Universe, and Everything, as computed by the supercomputer Deep Thought over seven and a half million years.
+
+Unfortunately nobody had a clear idea of what the Question was. A larger computer was commissioned to find out. It was demolished five minutes before the end of its run to make way for a hyperspace bypass.
+
+See also: Earth.
+
+=== The Ultimate Question | I | 1
+The question that 42 is the answer to, which nobody knows.
+
+The question whose answer is 42. Finding it required a computer the size of a planet. The computer was demolished, and the question remains open.
+
+=== The Earth computer | I | 1
+Earth's true purpose: a planet-sized computer built to find the Ultimate Question.
+
+Earth was a computer designed by Deep Thought and built by the Magratheans, with organic life as part of its programming. It was five minutes from finishing when it was demolished.
+
+=== Vogon poetry | I | 1
+The third worst poetry in the Universe.
+
+Verse of the Vogons, known for its effect on listeners. Hitchhikers have survived it by praising the imagery, which takes great presence of mind.
+
+=== Mostly Harmless | I | 1
+The Guide's two-word entry on the planet Earth.
+
+The complete entry on Earth after Ford Prefect's fifteen years of research and editing. Ford was proud of the extra word.
+
+=== Thursdays | I | 1
+Arthur's least favourite day of the week.
+
+A day of the week that has never gone well for Arthur Dent. He suspects it of something.
+
+=== Altairian dollar | I | 1
+A Galactic currency, in which hitchhiking is measured.
+
+One of several currencies of the Galaxy. A hitchhiker can see the Galaxy on fewer than thirty of them a day, if careful.
+
+=== Galactic Hyperspace Planning Council | I | 1
+The body that ordered Earth's demolition for a bypass.
+
+A planning authority with the power to remove planets that are in the way of progress. It publishes its plans and is surprised when nobody reads them.
+
+=== Megadodo Publications | I | 1
+The publishers of the Guide, based on Ursa Minor Beta.
+
+A publishing house with offices in Light City. It produces the Guide and very little else, which is plenty.
+
+=== President of the Galaxy | I | 1
+A post designed to draw attention away from real power.
+
+A job that exists to attract attention so that nobody notices who is really in charge. Zaphod Beeblebrox is ideally qualified.
+
+=== Hitchhiking | I | 1
+The traditional way to see the Galaxy on less than thirty Altairian dollars a day.
+
+The cheapest way to see the Galaxy, provided you are willing to see a great deal of the inside of spaceship holds.
+
+The trick is to stick out an electronic thumb, look harmless, and know where your towel is. Never accept a lift from a Vogon. Always accept a lift from anyone serving drinks.
+
+=== Shooty and Bang Bang | I | 1
+Two police officers on Magrathea who are sensitive about their work.
+
+Two well-meaning police officers who regret having to shoot at people, and do it anyway. They would like you to know that it is a difficult job.
+
+=== Teasers | I | 1
+Bored rich youngsters who land near people on backward worlds to annoy them.
+
+Young idlers who fly around looking for planets that have not met aliens yet, and land near someone who will not be believed. They find it hilarious.
+
+=== Sperm whale and bowl of petunias | I | 1
+Two missiles turned into a whale and a bowl of petunias by the Improbability Drive.
+
+Two nuclear missiles that, through improbability, became a whale and a bowl of flowers high above Magrathea. The whale had a short and thoughtful life. The petunias seemed to have been through this before.
+
+=== Disaster Area | I | 2
+The loudest rock band in the Galaxy.
+
+A band whose concerts are best heard from a bunker some distance away. Their stage effects include flying a ship into a star.
+
+=== Shoe Event Horizon | I | 2
+An economic theory about what happens when a world has too many shoe shops.
+
+The point at which a planet's economy can support nothing except shoe shops. Beyond it, there is only collapse, and very good shoes.
+
+=== Time travel tenses | I | 2
+The grammar problems that come with time travel.
+
+The main danger of time travel is not paradox but grammar. Experts recommend not discussing it at dinner.
+
+=== Scrabble | I | 2
+Arthur's homemade word game, which spells out a question from his brain.
+
+A board game played on prehistoric Earth with homemade tiles. Pulled at random from a bag, the tiles spelled a question that might have been the one Earth was built to find.
+
+=== Six by nine | I | 2
+The question Arthur's subconscious offers to go with the Answer.
+
+A multiplication that ought to give fifty-four. It is offered as the question to the Answer, which suggests something went wrong with the computer, or with the Universe.
+
+=== Krikkit Wars | I | 3
+A war waged by the people of Krikkit to wipe out the rest of the Universe.
+
+The most devastating war in history, fought against the entire Universe by a single world. It ended with Krikkit sealed away for a very long time.
+
+=== Flying | I | 3
+The knack of throwing yourself at the ground and missing.
+
+Flying is easy. You throw yourself at the ground and miss. The difficult part is being distracted at exactly the right moment, and not thinking about it afterwards.
+
+=== Belgium | I | 3
+The rudest word in the Galaxy.
+
+A word so offensive in most of the Galaxy that it is used only in serious screenplays. On Earth it is a country, which has caused misunderstandings.
+
+=== The Ashes | I | 3
+The cricket trophy that turns out to be part of the Wikkit Key.
+
+A small urn contested by two cricketing nations on Earth. It is also a vital piece of a key that could release Krikkit, which has made it even more valuable.
+
+=== The Party | I | 3
+A huge party that has been running for generations, high above a planet.
+
+A party that started a long time ago and never stopped. It floats above a planet, eats its food supplies, and has a guest list nobody can remember.
+
+=== Campaign for Real Time | I | 3
+A group that objects to time travellers spoiling history.
+
+Campaigners who would like the past to stay where it was put. They have a point, and very few supporters in the present.
+
+=== So Long, and Thanks for All the Fish | I | 1
+The farewell message the dolphins left as they departed Earth.
+
+The dolphins' final message to humanity, delivered as a polite thank you. Humans took it as a trick.
+
+=== God's Final Message to His Creation | I | 4
+A message in letters of fire that Arthur and Fenchurch travel to read.
+
+A short message written in flame on a distant hillside. It reads as an apology for the inconvenience. Its exact wording has been read by very few, and understood by fewer.
+
+=== The fishbowl | I | 4
+A glass bowl given to everyone on Earth by the dolphins.
+
+A gift bowl engraved with a message, given to every person on the restored Earth. Nobody knew why. Holding it to the ear helps.
+
+=== Outside of the Asylum | I | 4
+Wonko the Sane's inside-out house.
+
+A house built with its inside on the outside. The world is kept inside it. Wonko lives outside, where he can think.
+
+=== The Rain God | I | 4
+Rob McKenna, whom the clouds love and follow wherever he goes.
+
+A lorry driver who is followed by rain because the clouds adore him. When he learns why, he takes it surprisingly well.
+
+=== InfiniDim Enterprises | I | 5
+The company that takes over the Guide.
+
+A corporation that buys the Guide and wants to make it efficient. The Guide's staff, who are mostly in the bar, are against it.
+
+=== The Babel fish argument | I | 1
+A famous argument about God, based on the Babel fish.
+
+An argument that the Babel fish is too useful to have evolved by chance, so it proves there must be a God, which proves there isn't. It is popular at parties and unpopular with theologians.

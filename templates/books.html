@@ -1,0 +1,20 @@
+{#
+  books.html: the list of the six books, with how many entries appear in each.
+#}
+{% extends "base.html" %}
+{% block title %}The Books · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}THE BOOKS · {{ rows|length }} VOLUMES{% endblock %}
+{% block view %}
+<h2>The Books</h2>
+<p class="meta">The trilogy in six parts. Choose a book for its synopsis and everyone in it. The radio series, screen versions and collections are in the <a href="{{ url_for('shop') }}">shop</a>.</p>
+<ul class="refs">
+  {% for b in rows %}
+  <li>
+    <a href="{{ url_for('book', number=b.number) }}">
+      <span class="rn"><span class="bn">{{ b.number }}</span>{{ b.title }}</span>
+      <span class="rb">{{ b.author }}, {{ b.year }} · {{ b.entries }} entries</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

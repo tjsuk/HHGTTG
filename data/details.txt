@@ -1,0 +1,870 @@
+# Extra detail for each entry in references.txt, matched by name.
+#   books: every book the entry appears in (1-6)
+#   story: what happens to it in the novels, as an original plain summary
+#   tip:   a one-line hitchhiker's tip in the Guide's voice
+# All text is original. No passages from the novels are reproduced.
+
+=== Arthur Dent
+books: 1,2,3,4,5,6
+story: Arthur wakes to find bulldozers outside his house, and before lunch the whole Earth has been demolished. Ford gets him off the planet, and he spends the series being dragged across space and time. He is stranded on prehistoric Earth, learns to fly, falls in love with Fenchurch, and later settles on Lamuella as a sandwich maker before his daughter Random arrives.
+tip: If you meet him, offer him tea. It is the quickest way to his good side, and the only one.
+
+=== Ford Prefect
+books: 1,2,3,4,5,6
+story: Ford has spent fifteen years on Earth researching the new edition of the Guide. When the Vogons arrive he hitches a ride for himself and Arthur, and stays at the centre of the adventures that follow. In the later books he discovers that the Guide has been taken over by new owners, and goes on the run to find out why.
+tip: Never lend him money. Lend him a towel instead; you will get that back.
+
+=== Zaphod Beeblebrox
+books: 1,2,3,6
+story: Zaphod uses the launch of the Heart of Gold as cover to steal it, picking up Ford and Arthur by improbable accident. He leads the crew to the legendary planet Magrathea, then discovers that he is following a plan he hid from himself. He survives the Total Perspective Vortex and later joins the hunt for the pieces of the Wikkit Key.
+tip: Do not ask him what he is doing. He does not know, and he will want to tell you anyway.
+
+=== Trillian
+books: 1,2,3,5,6
+story: Trillian meets Arthur at a party in Islington, leaves with Zaphod, and is aboard the Heart of Gold when it rescues Arthur and Ford. She is often the one who works out what is really happening, and in the Krikkit affair she makes the key argument at the trial. In the later books she pursues a career as a reporter across the Galaxy.
+tip: When she says the ship is about to explode, start running.
+
+=== Marvin
+books: 1,2,3,4
+story: Marvin is the Heart of Gold's robot, built with a Genuine People Personality that came out wrong. He is left behind, stranded and reactivated many times over, and he waits so long at one point that he becomes older than the Universe. His final appearance comes at God's Final Message to His Creation.
+tip: Do not ask him how he is. You will find out.
+
+=== Slartibartfast
+books: 1,3
+story: Slartibartfast meets the crew on Magrathea and shows Arthur the factory floor where planets are built, including the replacement Earth. He later returns in his Bistromathic ship to recruit Arthur and Ford in the fight to stop the Krikkit robots.
+tip: Compliment the coastline, any coastline. He will assume you mean his.
+
+=== Deep Thought
+books: 1
+story: Deep Thought was built to calculate the Answer to Life, the Universe and Everything. After seven and a half million years it gives the Answer as 42, and explains that the Question has to be found by an even larger computer, which it designs. That computer turns out to be the Earth.
+tip: Never ask a computer a question you cannot phrase properly.
+
+=== Lunkwill and Fook
+books: 1
+story: Lunkwill and Fook are the programmers who switch on Deep Thought and ask it for the Answer. They are interrupted by two philosophers who fear for their jobs. The Answer itself is delivered to their descendants.
+tip: Write down the question. Your descendants will want to know.
+
+=== Majikthise and Vroomfondel
+books: 1
+story: Majikthise and Vroomfondel burst in on Deep Thought's switching-on to protest on behalf of philosophers everywhere. Deep Thought points out that the debate over its results will keep philosophers in work for millions of years, and they leave satisfied.
+tip: In any argument, ask for rigidly defined areas of doubt. It confuses everyone.
+
+=== Prostetnic Vogon Jeltz
+books: 1,2,5,6
+story: Jeltz commands the Vogon Constructor Fleet that demolishes the Earth. He reads his poetry to Arthur and Ford after catching them aboard, then throws them out of an airlock. He is sent after the Heart of Gold, and returns in the later books to finish the job he started on Earth.
+tip: If he offers to read you a poem, there is no correct answer. Try fainting.
+
+=== Mr Prosser
+books: 1
+story: Mr Prosser arrives with bulldozers to demolish Arthur's house for a bypass, and finds Arthur lying in the mud in front of them. Ford persuades him to take Arthur's place in the mud so that Arthur can go to the pub. The Vogons make the argument irrelevant.
+tip: Read your planning notices. Then read everyone else's.
+
+=== Eddie
+books: 1,2
+story: Eddie runs the Heart of Gold with relentless cheerfulness. When the ship is attacked by missiles, its improbability drive turns them into a whale and a bowl of petunias. Eddie's later troubles include being asked to make a cup of tea, which nearly gets everyone killed.
+tip: Turn the personality setting down before you ask it anything important.
+
+=== Benjy and Frankie
+books: 1
+story: The two mice reveal to Arthur that the Earth was a computer they commissioned, and that he may carry the last copy of the Question in his brain. They offer to buy it, by removing it. Arthur escapes, and the mice decide to invent a convincing question instead.
+tip: If a mouse offers you a deal, read the small print, and check what they want to keep.
+
+=== Grunthos the Flatulent
+books: 1
+story: Grunthos is mentioned in the Guide's survey of bad poetry. His recital of his own work was so awful that members of his audience died, and he did not survive it either.
+tip: Sit near the exit at any poetry reading.
+
+=== Paula Nancy Millstone Jennings
+books: 1
+story: Paula Nancy Millstone Jennings appears in the Guide's ranking of the worst poetry in the Universe. Her work was lost with the Earth.
+tip: The Guide's poetry rankings are not a reading list.
+
+=== Oolon Colluphid
+books: 1
+story: Oolon Colluphid is quoted by the Guide as the author of a series of books about God. He used the Babel fish argument in one of them to settle the matter, at least to his own satisfaction.
+tip: His books are excellent for propping up tables.
+
+=== Eccentrica Gallumbits
+books: 1
+story: Eccentrica Gallumbits is mentioned in passing as one of the Galaxy's celebrities. Zaphod claims to know her.
+tip: Do not believe anyone who says they know her personally. Especially Zaphod.
+
+=== Gag Halfrunt
+books: 2
+story: Gag Halfrunt is Zaphod's psychiatrist. It emerges that he has a hand in the Vogons' pursuit of the Heart of Gold, because he does not want Zaphod finding out what is hidden in his own brain.
+tip: Choose a psychiatrist who has no interest in your brain beyond its happiness.
+
+=== Zaphod Beeblebrox the Fourth
+books: 2
+story: When the Vogons attack the Heart of Gold, Zaphod holds a seance and summons his dead great-grandfather. The old ghost scolds him at length, then saves the ship and sends Zaphod off on his mission to Ursa Minor Beta.
+tip: Be nice to your ancestors. You never know when you will need a favour.
+
+=== Zarniwoop
+books: 2
+story: Zaphod goes to the Guide offices looking for Zarniwoop, only to find he is on an intergalactic cruise in his office. Zarniwoop is later revealed to be part of Zaphod's own plan to find the man who rules the Universe.
+tip: If an editor is unavailable, check the other universe in their desk.
+
+=== Roosta
+books: 2
+story: Roosta is a Guide employee who helps Zaphod when the offices are lifted off the ground and taken to Frogstar World B. His nutrient-soaked towel feeds Zaphod in a tight spot.
+tip: Soak your towel in something useful before a long trip.
+
+=== Gargravarr
+books: 2
+story: On Frogstar World B, Gargravarr is the voice who guides Zaphod into the Total Perspective Vortex. His mind and body no longer get on, so they now live apart.
+tip: If your body asks for a trial separation, agree to visiting hours.
+
+=== Hotblack Desiato
+books: 2
+story: At Milliways, Ford spots his old friend Hotblack Desiato, who is spending a year dead for tax reasons. The crew later steal what they think is Hotblack's ship, which turns out to be programmed for a concert finale that ends in a sun.
+tip: Never steal a rock star's spaceship without checking the flight plan.
+
+=== Max Quordlepleen
+books: 2
+story: Max Quordlepleen hosts the show at Milliways where diners watch the end of the Universe. He introduces the evening's special guests, including the Great Prophet Zarquon.
+tip: Tip the host. It is the end of the Universe; what else will you spend it on?
+
+=== Garkbit
+books: 2
+story: Garkbit is the head waiter at Milliways, where Arthur, Ford, Zaphod and Trillian arrive after a jump through time.
+tip: Book your table in advance. It is easier than it sounds.
+
+=== Yooden Vranx
+books: 2
+story: Yooden Vranx was President of the Galaxy before Zaphod and a childhood friend of Ford's. His influence on Zaphod's plans emerges in the second book.
+tip: Keep in touch with former presidents. They know where the bodies are buried.
+
+=== Dan Streetmentioner
+books: 2
+story: Dan Streetmentioner's handbook is cited by the Guide at Milliways, where the grammar of booking a table in the future becomes a real problem.
+tip: Avoid future past tenses in restaurants. Waiters do not like them.
+
+=== Veet Voojagig
+books: 2
+story: Veet Voojagig appears in one of the Guide's digressions, a scholar who devoted his life to the mystery of lost ballpoint pens and claimed to have found the planet where they all go.
+tip: Hold on to your pen. Somewhere, it is planning its escape.
+
+=== The Ruler of the Universe
+books: 2
+story: At the end of Zaphod's quest, he and Zarniwoop find the true ruler of the Universe in a shack on a rainy planet. The man rules by doubting everything, including whether his visitors exist.
+tip: If you meet him, introduce yourself. He may not believe you, but he will be polite.
+
+=== The Great Prophet Zarquon
+books: 2
+story: At Milliways, the Great Prophet Zarquon finally makes his long-promised return in front of the audience. He has very little time to say anything, because the Universe ends a few moments later.
+tip: Always be on time for the second coming.
+
+=== The Captain of the B Ark
+books: 2
+story: Arthur and Ford are taken aboard the Golgafrinchan B Ark, where they meet the Captain in his bath. He explains the ark's mission, and is in no hurry to find out that it was a trick.
+tip: If a ship's captain is in the bath, steer yourself.
+
+=== Number Two
+books: 2
+story: Number Two is the B Ark's eager officer, who wants to interrogate and shoot Ford and Arthur. He spends much of the visit looking for someone to go to war with.
+tip: Agree with him quickly. Then leave.
+
+=== Agrajag
+books: 3
+story: Arthur arrives at a strange cathedral and meets Agrajag, who explains that Arthur has killed him in every one of his lives, including as a fly, a rabbit and a bowl of petunias. Agrajag plans his revenge, but makes a mistake about when Arthur is due to die.
+tip: Apologise to small animals you step on. It may help later.
+
+=== Wowbagger the Infinitely Prolonged
+books: 3,6
+story: Wowbagger tracks Arthur down to insult him, as part of his plan to insult everyone in the Universe in alphabetical order. He returns in the sixth book with a very different plan for eternity.
+tip: When he insults you, thank him. It is the most attention he gets.
+
+=== Hactar
+books: 3
+story: Hactar is the computer built by the Silastic Armorfiends. Its sabotaged weapon cost it everything, and it was ground to dust. The dust drifts around Krikkit, and Hactar uses it to steer the Krikkiters toward war, until the crew confront it.
+tip: Do not trust dust clouds with opinions.
+
+=== Prak
+books: 3
+story: Prak was a witness who was given far too much truth drug and blurted out everything true in the Universe. Arthur later goes to ask him where he can find the Question, and finds him still laughing.
+tip: Ask simple questions. The full truth takes a long time.
+
+=== Judiciary Pag
+books: 3
+story: Judiciary Pag presides over the trial of Prak, which goes badly wrong when the truth drug overdose sets in.
+tip: In court, address the judge by his full title. It may take a while.
+
+=== Thor
+books: 3,6
+story: Arthur meets the Norse god Thor at a party, which ends in a fight between them. Thor returns in the sixth book, when Zaphod recruits him to look after a new world.
+tip: Do not insult a god at a party. They always bring their hammer.
+
+=== Effrafax of Wug
+books: 3
+story: The Guide tells the story of Effrafax of Wug, who made a mountain disappear by hiding it inside a Somebody Else's Problem field. The same technology hides the Bistromath at Lord's.
+tip: If you lose something big, check whether it became someone else's problem.
+
+=== Zem
+books: 3
+story: Zem is a mattress on Squornshellous Zeta. It meets Marvin while he is stranded there and is kind to him, before Marvin is taken by the Krikkit robots.
+tip: If a mattress offers to listen, let it.
+
+=== Fenchurch
+books: 4
+story: Arthur returns to an Earth that somehow still exists and meets Fenchurch, who has been haunted by a sense that something enormous happened. They fall in love, learn to fly together, and travel to see God's Final Message to His Creation.
+tip: If someone tells you they nearly understood everything once, listen.
+
+=== Russell
+books: 4
+story: Russell is Fenchurch's brother, who gives Arthur a lift from the motorway when he first returns to Earth. He is protective of his sister and suspicious of everything else.
+tip: Accept the lift. Do not discuss philosophy.
+
+=== Wonko the Sane
+books: 4
+story: Arthur and Fenchurch visit Wonko the Sane, who lives in a house built inside out. He gives them the clue to where the dolphins went and what the fishbowl means.
+tip: Visit him for the view. Bring your fishbowl.
+
+=== Rob McKenna
+books: 4
+story: Rob McKenna drives a lorry in the rain, as he has done for years. He gives Arthur a lift, and it emerges that he is a Rain God, beloved of clouds.
+tip: If he offers you a lift, take an umbrella.
+
+=== Murray Bost Henson
+books: 4
+story: Murray Bost Henson is a journalist Ford calls on Earth while trying to get off the planet. He helps, more or less, with an eye on a story.
+tip: Never tell a journalist the truth about your planet. They will make it bigger.
+
+=== Lallafa
+books: 4
+story: The Guide tells the story of Lallafa, a poet whose work was so admired that time travellers began visiting him, until the visits changed his life and his work in ways that troubled the Campaign for Real Time.
+tip: If a time traveller offers you fame, ask what it costs.
+
+=== Random Dent
+books: 5,6
+story: Random is the daughter Arthur did not know he had, the result of his DNA bank donation and Trillian's plans. Trillian leaves her with Arthur on Lamuella. She steals the Guide Mark II and sets off for Earth, pulling Arthur and Ford after her.
+tip: Do not tell her what to do. Not because it is rude, but because it will not work.
+
+=== Tricia McMillan
+books: 5
+story: Tricia McMillan is the Trillian who did not leave the party with Zaphod. She works in television in London, and is drawn into a story involving the Grebulons, astrology and a version of Earth she cannot quite believe.
+tip: Always go to the party. Possibly not with the man from another planet.
+
+=== Old Thrashbarg
+books: 5
+story: Old Thrashbarg is the priest of Lamuella, interpreting the will of Almighty Bob. He welcomes Arthur's sandwiches, and is less welcoming of anything that threatens his interpretations.
+tip: Agree with whatever Bob is said to have said. It saves time.
+
+=== Bob
+books: 5
+story: Almighty Bob is the god of Lamuella, whose will Old Thrashbarg is always ready to explain. The villagers accept Bob's views with good grace.
+tip: When in doubt about Bob's views, ask Old Thrashbarg. He will know.
+
+=== Vann Harl
+books: 5
+story: Vann Harl runs the Guide after its takeover by InfiniDim Enterprises. Ford confronts him, takes his ID card, and uses it to get away with the new Guide Mark II.
+tip: If your new boss wants to make the Guide efficient, keep your expense card close.
+
+=== Colin
+books: 5
+story: Colin is a security robot that Ford captures and rewires to be blissfully happy. He becomes Ford's devoted accomplice as Ford breaks into the Guide offices and escapes with the Guide Mark II.
+tip: Be kind to your robots. Happiness is cheap to install.
+
+=== Gail Andrews
+books: 5
+story: Tricia McMillan meets Gail Andrews, a well-known astrologer. Their conversations help Tricia make sense of the strange events around her.
+tip: Read your horoscope. Then do the opposite, just in case.
+
+=== Constant Mown
+books: 6
+story: Constant Mown is the son of Prostetnic Vogon Jeltz, serving in his father's fleet as it pursues the last humans to Nano.
+tip: A thoughtful Vogon is still a Vogon. Keep moving.
+
+=== Hillman Hunter
+books: 6
+story: Hillman Hunter has led a colony of wealthy Earth survivors to the planet Nano. He holds interviews for a god to protect them, which is how Thor gets the job.
+tip: Before hiring a god, check their references.
+
+=== Cthulhu
+books: 6
+story: Cthulhu is among the gods who apply to protect the colony on Nano. He does not get the job.
+tip: In interviews, keep your tentacles to yourself.
+
+=== Earth
+books: 1,2,3,4,5,6
+story: Earth is demolished at the start of the first book to make way for a hyperspace bypass, and turns out to have been a vast computer. A replacement is built on Magrathea. Arthur later finds a restored Earth with the dolphins gone, and the fifth book reveals that there are many Earths across parallel universes.
+tip: Save a copy of anything important before visiting.
+
+=== Magrathea
+books: 1
+story: The Heart of Gold lands on Magrathea, the legendary planet-builders' world, and finds it waking from a long sleep. Arthur meets Slartibartfast there and visits the factory floor where a replacement Earth is being built.
+tip: Ignore the recorded warnings at the door. They are mostly bluff.
+
+=== Betelgeuse
+books: 1
+story: Betelgeuse is where Ford Prefect comes from. He talks about it with fondness, and almost never goes back.
+tip: If you meet someone from Betelgeuse, ask about their home. They will need a moment to remember.
+
+=== Islington
+books: 1
+story: Arthur met Trillian at a party in Islington, only to watch her leave with Zaphod. He meets her again aboard the Heart of Gold.
+tip: Always get a phone number at parties.
+
+=== Horse and Groom
+books: 1
+story: Ford takes Arthur to the Horse and Groom as the bulldozers wait, and tells him the world is about to end. Arthur drinks three pints at lunchtime and is not convinced.
+tip: If someone buys you a round at the end of the world, accept.
+
+=== Sector ZZ9 Plural Z Alpha
+books: 1
+story: The Vogons announce Earth's demolition with reference to its sector and the planning procedures that applied there.
+tip: Know your Galactic address. It will be on the paperwork.
+
+=== Viltvodle VI
+books: 1
+story: Viltvodle VI appears in the Guide's discussion of how the Universe began, as home to the Jatravartids and their sneeze-based creation story.
+tip: Bring a handkerchief. It shows respect.
+
+=== Traal
+books: 1
+story: Traal is mentioned in the Guide's entry on towels, as home to the Ravenous Bugblatter Beast.
+tip: Keep your towel within reach at all times.
+
+=== Eroticon Six
+books: 1
+story: Eroticon Six is mentioned in passing as the home of Eccentrica Gallumbits.
+tip: The Guide's notes on this planet are best read in private.
+
+=== Alpha Centauri
+books: 1
+story: When the people of Earth object to their demolition, the Vogons point out that the plans have been on display at the planning office on Alpha Centauri for fifty years.
+tip: Check the local planning office before buying property on any planet.
+
+=== Damogran
+books: 2
+story: Damogran is the remote planet where the Heart of Gold was secretly built, and where Zaphod arrives to launch it, and steals it instead.
+tip: Nothing happens on Damogran. Bring a book.
+
+=== Ursa Minor Beta
+books: 2,5
+story: Zaphod visits the Guide's offices on Ursa Minor Beta to find Zarniwoop, and the whole building is lifted away to Frogstar World B. In the fifth book Ford returns to the offices to find the Guide under new management.
+tip: Arrive on a Saturday afternoon. It always is.
+
+=== Frogstar World B
+books: 2
+story: Zaphod is taken to Frogstar World B to be put inside the Total Perspective Vortex. He emerges unharmed, for reasons that only make sense later.
+tip: If anyone offers you a perspective, decline.
+
+=== Golgafrincham
+books: 2
+story: The Golgafrinchans tricked a third of their population into leaving on the B Ark, claiming that their world was doomed. The B Ark lands on prehistoric Earth, and its passengers become our ancestors.
+tip: If your planet asks you to board an ark first, ask who is boarding second.
+
+=== Fintlewoodlewix
+books: 2
+story: The Golgafrinchans name their new world Fintlewoodlewix, and begin to colonise it with meetings, committees and plans for the wheel.
+tip: Do not let marketing people name a planet.
+
+=== Prehistoric Earth
+books: 2,3
+story: The B Ark crashes on prehistoric Earth with Arthur and Ford aboard. The Golgafrinchans displace the native cavemen, and Arthur and Ford are stranded for years. Arthur lives in a cave until a passing sofa offers a way out.
+tip: Make friends with the locals. They were here first.
+
+=== Milliways
+books: 2
+story: After a trip through time, the crew eat dinner at Milliways and watch the Universe end. Zaphod steals a ship from the car park, which turns out to be Hotblack Desiato's.
+tip: Book a window table. The view is spectacular, briefly.
+
+=== Big Bang Burger Bar
+books: 2
+story: The Big Bang Burger Bar is mentioned alongside Milliways as an eatery at the other end of time.
+tip: Arrive early. Very early.
+
+=== Krikkit
+books: 3
+story: Krikkit was hidden inside a dust cloud, so its people believed they were alone. When they saw the stars, they decided to destroy the rest of the Universe. They were locked away, and the third book is about the attempt to set them free.
+tip: Never tell a planet it is not alone without breaking the news gently.
+
+=== Lord's Cricket Ground
+books: 3
+story: Arthur and Ford arrive at Lord's on a time-travelling sofa, just in time to see a Krikkit robot ship land on the pitch and steal the Ashes.
+tip: Keep your eye on the ball, and also on the robots.
+
+=== Squornshellous Zeta
+books: 3
+story: Marvin is stranded on Squornshellous Zeta, where he meets the mattress Zem, before the Krikkit robots take him for his part in their plan.
+tip: Waterproof shoes are essential.
+
+=== Stavromula Beta
+books: 3
+story: Arthur learns from Agrajag that he is destined to be the target of an assassination attempt on Stavromula Beta, and that until then he cannot die. This knowledge comes in handy.
+tip: If you know where you are going to die, you know where not to go.
+
+=== Cathedral of Hate
+books: 3
+story: Arthur stumbles into the Cathedral of Hate built by Agrajag, decorated with reminders of all the times Arthur has killed him.
+tip: If you find a building dedicated to how much someone hates you, apologise and leave.
+
+=== Lamuella
+books: 5
+story: After a crash, Arthur ends up on Lamuella and becomes the Sandwich Maker. He lives a quiet life until Trillian drops off his daughter, Random.
+tip: Learn a trade. Sandwiches are always in demand.
+
+=== NowWhat
+books: 5
+story: Arthur is stranded on the bleak planet NowWhat after a spaceship accident, before he moves on toward Lamuella.
+tip: Leave as soon as possible.
+
+=== Hawalius
+books: 5
+story: Arthur visits the oracles of Hawalius looking for advice. The seers are struggling to make a living now that the future is freely available elsewhere.
+tip: Pay oracles in advance. They already know if you will skip the bill.
+
+=== Han Wavel
+books: 5
+story: Ford relaxes on the luxury holiday world of Han Wavel until he is pulled back into the story.
+tip: Book the reef hotel. Charge it to the Guide.
+
+=== Rupert
+books: 5
+story: The tenth planet of Earth's solar system, nicknamed Rupert, is where the Grebulons have settled to watch Earth and its television.
+tip: Plan your journey carefully. It is a long way to Rupert.
+
+=== Nano
+books: 6
+story: Nano is the planet where Hillman Hunter leads Earth's survivors, and where the Vogons come looking for them.
+tip: Choose your god carefully. Choose your planet more carefully.
+
+=== Vogons
+books: 1,2,5,6
+story: A Vogon Constructor Fleet demolishes Earth in the first book, and the Vogons pursue the survivors across the series. In the fifth book they come to finish the work across every version of the Earth.
+tip: If a Vogon asks for your forms, hand them over. Then check you still have your own.
+
+=== Babel Fish
+books: 1
+story: Aboard the Vogon ship, Ford puts a Babel fish in Arthur's ear so that he can understand the Vogon captain's announcements, and his poetry.
+tip: Put it in your ear. Do not think too hard about it.
+
+=== Dolphins
+books: 1,4
+story: The dolphins knew Earth would be destroyed and left beforehand with a thank-you message. In the fourth book Arthur discovers that they did more for Earth than anyone realised.
+tip: When a dolphin waves goodbye, pack.
+
+=== Mice
+books: 1
+story: The mice of Earth were the hyperintelligent beings Benjy and Frankie, running the experiment to find the Ultimate Question.
+tip: Be polite to lab mice. They may be in charge.
+
+=== Ravenous Bugblatter Beast of Traal
+books: 1
+story: The Bugblatter Beast is mentioned in the Guide's famous entry on towels, which recommends wrapping your towel around your head to escape it.
+tip: Wrap your towel around your head. It will think you are gone.
+
+=== Jatravartids
+books: 1
+story: The Jatravartids appear in the Guide's discussion of creation, as believers in the Great Green Arkleseizure.
+tip: Bless them when they sneeze. It is theology.
+
+=== Hooloovoo
+books: 1
+story: When the Heart of Gold's improbability drive is switched off, one of the hoped-for changes is that a Hooloovoo is restored to its normal form.
+tip: Handle with care. It may be a passenger.
+
+=== Dentrassis
+books: 1
+story: The Dentrassis are the Vogons' cooks. It is a Dentrassi who picks up Ford's Sub-Etha signal and lets him and Arthur aboard the Vogon ship.
+tip: Smile at the cooks. They control access.
+
+=== Azgoths of Kria
+books: 1
+story: The Azgoths of Kria appear in the Guide's league table of terrible poetry, below the Vogons.
+tip: Earplugs are a sound investment.
+
+=== Arcturan Megadonkey
+books: 1
+story: The Arcturan Megadonkey turns up in the Guide's colourful comparisons, as a measure of size and stamina.
+tip: Do not race one.
+
+=== Golgafrinchans
+books: 2
+story: The B Ark's Golgafrinchan passengers settle prehistoric Earth, displacing the native cavemen and possibly ruining the experiment the Earth was built to run.
+tip: If you are invited to leave a planet first, ask who will clean the phones.
+
+=== Telephone sanitisers
+books: 2
+story: The Golgafrinchans sent their telephone sanitisers away on the B Ark. The rest of the population were later wiped out by a disease spread from a dirty phone.
+tip: Respect the people who keep things clean.
+
+=== Ameglian Major Cow
+books: 2
+story: At Milliways, an Ameglian Major Cow comes to the table and recommends cuts of itself. Arthur is horrified and orders a salad.
+tip: The salad is very good.
+
+=== Frogstar Scout robot
+books: 2
+story: A Frogstar Scout robot attacks the Guide offices on Ursa Minor Beta and carries the building off to Frogstar World B, with Zaphod inside.
+tip: If a building starts to lift, hold on to something heavy.
+
+=== Krikkiters
+books: 3
+story: The people of Krikkit were friendly and peaceful until they saw the stars. The third book reveals that they were being manipulated all along.
+tip: Show them the stars gently.
+
+=== Krikkit robots
+books: 3
+story: The Krikkit robots steal the pieces of the Wikkit Key across time, including the Ashes at Lord's, so that Krikkit can be released.
+tip: Duck. They have very good batting averages.
+
+=== Silastic Armorfiends of Striterax
+books: 3
+story: The Silastic Armorfiends built Hactar to create the ultimate weapon. Hactar deliberately built a dud, and they destroyed it in fury.
+tip: Do not argue with an Armorfiend. Just agree to everything.
+
+=== Mattresses
+books: 3
+story: The mattresses of Squornshellous Zeta are introduced when Marvin is stranded among them and befriends Zem.
+tip: Sit on them gently.
+
+=== Perfectly Normal Beasts
+books: 5
+story: The Perfectly Normal Beasts thunder across Lamuella twice a year, and Arthur's sandwiches depend on them. Their sudden appearances hint at something odd about the planet.
+tip: Stand well back during the migration.
+
+=== Pikka birds
+books: 5
+story: The Pikka birds of Lamuella greet every morning with fresh astonishment.
+tip: Learn from them. Be surprised by breakfast.
+
+=== Grebulons
+books: 5
+story: The Grebulons have lost their memories and their purpose, and settled on Rupert, watching Earth television and taking up astrology.
+tip: Never let an alien plan its week by your horoscope.
+
+=== Heart of Gold
+books: 1,2,3,6
+story: Zaphod steals the Heart of Gold at its launch, and its improbability drive picks up Arthur and Ford in deep space. The ship carries the crew to Magrathea and onward through the second and third books.
+tip: Ask the computer to be less cheerful before landing.
+
+=== Infinite Improbability Drive
+books: 1,2
+story: The Heart of Gold's drive is first used to rescue Arthur and Ford, and later to turn two missiles into a whale and a bowl of petunias.
+tip: Expect strange side effects. Then expect stranger ones.
+
+=== Finite Improbability Generator
+books: 1
+story: The Guide explains that the Infinite Improbability Drive was invented by a student who worked out how to use a Finite Improbability Generator to calculate the required improbability.
+tip: Do not take one to a party.
+
+=== Sub-Etha Sens-O-Matic
+books: 1
+story: Ford uses his Electronic Thumb to hitch a lift on the Vogon ship as Earth is demolished.
+tip: Keep it charged.
+
+=== Nutrimatic Drinks Dispenser
+books: 1,2
+story: Arthur tries to get tea from the Nutrimatic, and his persistence ties up the ship's computer at a dangerous moment.
+tip: Lower your expectations before ordering.
+
+=== Genuine People Personalities
+books: 1
+story: Genuine People Personalities explain why Marvin is depressed and why the Heart of Gold's doors sigh with satisfaction.
+tip: Do not upset the doors.
+
+=== Kill-O-Zap gun
+books: 1
+story: The Magrathean police use Kill-O-Zap guns in their gunfight with the crew.
+tip: Hide behind something large and not explosive.
+
+=== Bambleweeny 57 Sub-Meson Brain
+books: 1
+story: The Guide explains that a Bambleweeny 57 Sub-Meson Brain connected to a source of Brownian motion, like a hot cup of tea, can generate improbability.
+tip: Never spill tea on it.
+
+=== Hyperspace bypass
+books: 1
+story: The Vogons demolish Earth to make way for a hyperspace bypass. At the same time, Arthur's house is being demolished for a much smaller bypass.
+tip: Bypasses come in all sizes. All of them go through your house.
+
+=== The Guide
+books: 1,2,3,4,5,6
+story: Ford carries a copy of the Guide throughout the series, and its entries interrupt the story to explain the Galaxy. In the fifth book the Guide is taken over and a new edition, the Guide Mark II, causes chaos.
+tip: Keep it with you. And do not believe all of it.
+
+=== Encyclopaedia Galactica
+books: 1
+story: The Encyclopaedia Galactica is mentioned as the Guide's more respectable competitor, which the Guide outsells across the Galaxy.
+tip: It is more accurate. It is also heavier.
+
+=== Sirius Cybernetics Corporation
+books: 1,2
+story: The Sirius Cybernetics Corporation made Marvin, the Heart of Gold's doors, the Nutrimatic machine and its lifts. Their products appear across the first two books, usually not working properly.
+tip: Keep the receipt. Not that it will help.
+
+=== Joo Janta 200 Super-Chromatic Peril Sensitive Sunglasses
+books: 2
+story: Zaphod wears his peril-sensitive sunglasses during a dangerous spaceship escape, which conveniently blacks out the danger, and everything else.
+tip: Take them off before driving.
+
+=== Total Perspective Vortex
+books: 2
+story: Zaphod is put into the Total Perspective Vortex on Frogstar World B. He emerges cheerfully, which is only possible because of where he was at the time.
+tip: Avoid it. Your sense of self-importance needs to remain intact.
+
+=== Happy Vertical People Transporters
+books: 2
+story: Zaphod rides a Sirius Cybernetics lift at the Guide offices, which tries to persuade him to go down instead of up.
+tip: Take the stairs.
+
+=== Disaster Area stunt ship
+books: 2
+story: Zaphod steals a ship from the Milliways car park, which turns out to be Hotblack Desiato's stunt ship, programmed to fly into a sun.
+tip: Check the autopilot before take-off.
+
+=== B Ark
+books: 2
+story: Arthur and Ford end up on the B Ark, the ship that carries Golgafrincham's unwanted passengers to prehistoric Earth.
+tip: Look for the A and C arks. You will not find them.
+
+=== Bistromathic Drive
+books: 3
+story: Slartibartfast's ship uses Bistromathics, and he explains the theory to Arthur. The drive takes them to Lord's and across the Galaxy to stop Krikkit.
+tip: Do not pay the bill until you have landed.
+
+=== Starship Bistromath
+books: 3
+story: Slartibartfast's ship, the Bistromath, is hidden at Lord's inside a Somebody Else's Problem field.
+tip: Look for it in the corner of your eye.
+
+=== Somebody Else's Problem field
+books: 3
+story: The Bistromath parks at Lord's under a Somebody Else's Problem field, so that nobody sees it.
+tip: If you cannot see something, it may be your problem after all.
+
+=== Wikkit Key
+books: 3
+story: The Wikkit Key unlocks the prison around Krikkit. The Krikkit robots steal its pieces, including the Ashes, from across time, and the crew try to stop them.
+tip: Keep your cricket trophies under lock and key.
+
+=== Slo-Time envelope
+books: 3
+story: Krikkit was sealed inside a Slo-Time envelope at the end of the Krikkit Wars, until the Key could be assembled.
+tip: Do not wait inside one. It takes forever.
+
+=== Chesterfield sofa
+books: 3
+story: A sofa floating through time and space appears in a field on prehistoric Earth. Arthur and Ford chase it and ride it to Lord's in the twentieth century.
+tip: Grab passing furniture. It may be your only ride.
+
+=== Starship Titanic
+books: 3
+story: The Guide relates the story of the Starship Titanic, which suffered sudden and total existence failure on its maiden voyage.
+tip: Check that a starship exists before boarding.
+
+=== Guide Mark II
+books: 5
+story: The Guide Mark II arrives at Arthur's home and Random steals it. It turns out to have its own plans, which involve the destruction of every Earth.
+tip: If your new Guide seems helpful, ask what it wants.
+
+=== Dine-O-Charge card
+books: 5
+story: Ford's Guide expense card, the Dine-O-Charge, plays a part in his escape when he learns that the Guide's new owners have something unusual in mind for it.
+tip: Keep your expense card in good standing. It may save your life.
+
+=== Pan Galactic Gargle Blaster
+books: 1
+story: The Guide explains the Gargle Blaster in detail, including its effects. Zaphod is credited with inventing it.
+tip: Try one. Once.
+
+=== Ol' Janx Spirit
+books: 1
+story: Ford recalls drinking games with Ol' Janx Spirit while trying to explain things to Arthur.
+tip: Stay sober for the chant.
+
+=== Santraginean fish
+books: 1
+story: Santraginean fish are part of the Gargle Blaster's recipe, as described in the Guide.
+tip: Do not ask the bartender for the recipe.
+
+=== Tea
+books: 1,2,3,4,5
+story: Arthur's quest for a proper cup of tea runs through the series. His attempt to explain tea to the Nutrimatic machine nearly kills everyone.
+tip: Bring your own teabags.
+
+=== Peanuts
+books: 1
+story: Ford buys peanuts in the pub before the Vogons arrive, to help with the shock of a matter transference beam.
+tip: Eat the peanuts. Trust Ford on this.
+
+=== Jynnan tonyx
+books: 2
+story: The Guide explains that a drink sounding like gin and tonic exists on most planets.
+tip: Order one anywhere. It will taste almost right.
+
+=== Dish of the Day
+books: 2
+story: At Milliways, the Dish of the Day, a talking cow, presents itself to the table.
+tip: Say no politely. The cow will not be hurt.
+
+=== Sandwiches
+books: 5
+story: On Lamuella, Arthur becomes the Sandwich Maker and is loved for it. He is happiest making them, until his daughter arrives.
+tip: Find your calling. It may involve bread.
+
+=== Towels
+books: 1,2
+story: The Guide's entry on towels is one of its most famous. Ford carries a towel throughout, and teaches Arthur its value.
+tip: Know where your towel is.
+
+=== 42
+books: 1,2
+story: Deep Thought gives 42 as the Answer. In the second book, Arthur's Scrabble tiles suggest a possible Question.
+tip: If someone asks you a question you cannot answer, say 42. It worked for Deep Thought.
+
+=== The Ultimate Question
+books: 1,2
+story: The Earth was built to find the Question. It was destroyed five minutes before finishing, and the search for it drives the first two books.
+tip: Ask it carefully. You may get an answer.
+
+=== The Earth computer
+books: 1
+story: Slartibartfast and the mice reveal that the Earth was a computer designed by Deep Thought to find the Question.
+tip: You are part of a computer program. Act accordingly.
+
+=== Vogon poetry
+books: 1
+story: Captain Jeltz reads his poetry to Arthur and Ford in the Vogon ship. They try to praise it to save their lives, and fail.
+tip: Praise the metaphors. Even if you cannot find them.
+
+=== Mostly Harmless
+books: 1,5
+story: Ford reveals that his years of research on Earth were cut by his editors to a brief entry. The phrase gives its name to the fifth book.
+tip: Always keep your notes. Your editor will not.
+
+=== Thursdays
+books: 1
+story: Earth is destroyed on a Thursday, and Arthur has never got on with the day.
+tip: Stay in bed on Thursdays.
+
+=== Altairian dollar
+books: 1
+story: The Altairian dollar is named in the Guide's promise that you can see the Galaxy on very little money.
+tip: Carry small change. Spaceships rarely have it.
+
+=== Galactic Hyperspace Planning Council
+books: 1
+story: The Galactic Hyperspace Planning Council authorised the demolition of Earth, as the Vogons announce over the loudspeakers.
+tip: Read the minutes of every meeting. It could save your planet.
+
+=== Megadodo Publications
+books: 1,2,5
+story: Megadodo publishes the Guide from Ursa Minor Beta. Zaphod visits its offices in the second book, and Ford finds them changed in the fifth.
+tip: Visit the bar on the ground floor. It is famous.
+
+=== President of the Galaxy
+books: 1,2
+story: Zaphod is President of the Galaxy, a job whose real purpose is to distract attention from power. The role is explored when he discovers what his own plans were.
+tip: Vote for the most outrageous candidate. It is what the system wants.
+
+=== Hitchhiking
+books: 1,2,3,4,5
+story: Ford is a hitchhiker by profession. Arthur learns the art from him, and the whole series follows their journeys.
+tip: Look harmless. Carry a towel.
+
+=== Shooty and Bang Bang
+books: 1
+story: On Magrathea, two police officers shoot at the crew while apologising for the stress of their jobs. A sudden malfunction ends the gunfight.
+tip: Agree that their job is very hard. Then run.
+
+=== Teasers
+books: 1
+story: The Guide explains Teasers, who land near people on undiscovered worlds just to annoy them. Ford explains why he could not hitch a lift sooner.
+tip: If a UFO lands in front of you, wave. It is the polite thing to do.
+
+=== Sperm whale and bowl of petunias
+books: 1,3
+story: When missiles attack the Heart of Gold, the improbability drive turns them into a whale and a bowl of petunias. The petunias turn out to have a further role in Agrajag's story.
+tip: If you see a whale falling from the sky, step aside.
+
+=== Disaster Area
+books: 2
+story: The crew run into Disaster Area when they steal the band's stunt ship from the Milliways car park.
+tip: Watch the concert from another planet.
+
+=== Shoe Event Horizon
+books: 2
+story: The Shoe Event Horizon is described as the reason Frogstar World B is in ruins.
+tip: Buy only the shoes you need.
+
+=== Time travel tenses
+books: 2
+story: The Guide's digression on time travel grammar comes up as the crew arrive at Milliways.
+tip: Speak in the present tense. It is safer.
+
+=== Scrabble
+books: 2
+story: On prehistoric Earth, Arthur makes Scrabble tiles and pulls them from a bag at random to see if his brain holds the Question.
+tip: Play carefully. The tiles may be telling you something.
+
+=== Six by nine
+books: 2
+story: Arthur's Scrabble tiles suggest that the Question is what you get if you multiply six by nine. The answer does not quite fit, which suggests something went wrong.
+tip: Check your arithmetic. The Universe does not.
+
+=== Krikkit Wars
+books: 3
+story: The Krikkit Wars are recounted in the third book, when Slartibartfast explains why Krikkit was locked away and why it must stay locked.
+tip: Learn from history. Or at least avoid it.
+
+=== Flying
+books: 3,4
+story: Arthur learns to fly by accident when he trips and is distracted before he hits the ground. Later he teaches Fenchurch.
+tip: Throw yourself at the ground. Miss.
+
+=== Belgium
+books: 3
+story: The word Belgium comes up as the rudest word in the Galaxy.
+tip: Never say it aloud in polite company.
+
+=== The Ashes
+books: 3
+story: The Krikkit robots steal the Ashes from Lord's, revealing that the trophy is part of the Wikkit Key.
+tip: Guard your sporting trophies.
+
+=== The Party
+books: 3
+story: Arthur and Ford end up at a party that has been running for generations, high above a planet. The Krikkit robots arrive to steal a piece of the Key.
+tip: Leave before the robots arrive.
+
+=== Campaign for Real Time
+books: 3
+story: The Campaign for Real Time appears in the third book, opposing time travellers who change history.
+tip: Do not travel back to change things. They will notice.
+
+=== So Long, and Thanks for All the Fish
+books: 1,4
+story: The dolphins' farewell message is mentioned in the first book and is the title of the fourth, where Arthur learns what they did.
+tip: Say thank you before you leave.
+
+=== God's Final Message to His Creation
+books: 4
+story: At the end of the fourth book, Arthur and Fenchurch travel across the Galaxy to read God's Final Message, written in fire. Marvin is with them.
+tip: Read it. It is shorter than you think.
+
+=== The fishbowl
+books: 4
+story: When Earth returns, everyone has a fishbowl engraved with a message. Wonko the Sane explains that it is the dolphins' gift.
+tip: Hold it to your ear.
+
+=== Outside of the Asylum
+books: 4
+story: Wonko the Sane lives in an inside-out house. Arthur and Fenchurch visit him to learn about the dolphins.
+tip: Wipe your feet on the way in. Or is it out?
+
+=== The Rain God
+books: 4
+story: Rob McKenna is revealed as a Rain God. The clouds love him, and follow him everywhere.
+tip: Bring an umbrella when you visit him.
+
+=== InfiniDim Enterprises
+books: 5
+story: InfiniDim takes over the Guide in the fifth book. Ford discovers that its plans for the Guide Mark II go further than anyone realised.
+tip: Keep an eye on who owns your guidebook.
+
+=== The Babel fish argument
+books: 1
+story: The Guide presents the Babel fish argument, which turns the fish into a joke about faith and proof.
+tip: Do not use it at dinner parties. It never ends well.

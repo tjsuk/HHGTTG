@@ -1,0 +1,16 @@
+{#
+  cover.html: the closed device, shown at /.
+  It replaces the whole "device" block from base.html, because a closed Guide
+  has no screen or keypad, only the lid and one button to open it.
+#}
+{% extends "base.html" %}
+{% block device %}
+<section class="cover">
+  <p>The Hitchhiker's Guide to the Galaxy</p>
+  <h1>DON'T<br>PANIC</h1>
+  <p class="note">{{ entry_count }} entries of slightly inaccurate information, in a casing that has survived at least one Vogon poetry reading.</p>
+</section>
+<div class="keys">
+  <a class="key big" href="{{ url_for('index') }}">Open the Guide</a>
+</div>
+{% endblock %}

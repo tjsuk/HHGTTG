@@ -1,0 +1,66 @@
+{#
+  base.html: the layout every page shares.
+
+  Other templates start with {% extends "base.html" %} and fill in the named
+  blocks below. Jinja's template inheritance means the device casing, keypad
+  and footer are written once, here, instead of copied into every page.
+
+  Blocks a page can fill:
+    title   the browser tab title
+    crumb   the status line at the top of the screen ("INDEX", "ENTRY: ...")
+    view    the scrolling screen content
+    device  everything inside the casing; the cover page replaces it entirely
+            because a closed device has no screen or keypad.
+
+  Jinja comments like this one (curly brace plus hash) are removed when the page
+  is rendered, so they are never sent to the browser.
+#}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  {# viewport-fit=cover lets the starfield reach the edges on phones with notches. #}
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% block title %}The Hitchhiker's Guide{% endblock %}</title>
+  {# Fonts come from Google Fonts. If they fail to load (offline), guide.css lists
+     fallback fonts, so the page still works, just in system fonts. #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap">
+  {# url_for('static', ...) builds the right path even if the app is mounted somewhere else. #}
+  <link rel="stylesheet" href="{{ url_for('static', filename='guide.css') }}">
+</head>
+<body>
+  {# Decorative background; aria-hidden keeps screen readers from announcing it. #}
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <main class="device" aria-label="The Hitchhiker's Guide to the Galaxy, handheld edition">
+    <div class="topbar"><span><span class="led"></span>Sub-Etha link</span><span>Megadodo Publications · Mk II</span></div>
+    {% block device %}
+    {# aria-live="polite" lets screen readers announce new screen content when it changes. #}
+    <section class="screen" aria-live="polite">
+      <div class="status"><span>{% block crumb %}INDEX{% endblock %}</span><span id="clock">GST --:--:--</span></div>
+      {# tabindex="0" makes the scrolling screen focusable, so it can be scrolled with the keyboard. #}
+      <div class="view" tabindex="0">{% block view %}{% endblock %}</div>
+      {# A plain GET form: searching works with no JavaScript, and results have a shareable URL. #}
+      <form class="search" action="{{ url_for('search') }}" method="get" autocomplete="off">
+        <label for="q">&gt;</label>
+        <input id="q" name="q" placeholder="Look up anything in the Galaxy..." maxlength="80">
+      </form>
+    </section>
+    <nav class="keys" aria-label="Guide keys">
+      <a class="key" href="{{ url_for('index') }}">Index</a>
+      <a class="key" href="{{ url_for('random_entry') }}">Random</a>
+      {# Back is a button, not a link, because it uses browser history (see guide.js). #}
+      <button class="key" id="kBack" type="button">Back</button>
+      <a class="key" href="{{ url_for('cover') }}">Close</a>
+    </nav>
+    {% endblock %}
+    {# entry_count comes from the lookups() context processor in app.py.
+       The Amazon Associates disclosure is required on every page with associate links,
+       so it lives here in the shared footer rather than on individual pages. #}
+    <p class="fineprint">Unofficial fan-made device. {{ entry_count }} entries, all original text, stored in SQLite.<br>
+      As an Amazon Associate I earn from qualifying purchases. <a href="{{ url_for('shop') }}">Shop</a></p>
+  </main>
+  {# The script loads last, after the page content exists, so it can find its elements. #}
+  <script src="{{ url_for('static', filename='guide.js') }}"></script>
+</body>
+</html>

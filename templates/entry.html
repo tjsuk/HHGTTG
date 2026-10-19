@@ -1,0 +1,84 @@
+{#
+  entry.html: one Guide entry. Receives from the entry() route in app.py:
+    e             the entry row, plus category_name, category_art and book_title
+    appears       the books it appears in
+    mentions      entries this one names in its text (for autolink)
+    mentioned_in  entries that name this one
+    products      Amazon products for this entry and its books
+
+  Everything Jinja prints is HTML-escaped automatically, which stops any text
+  from running as HTML. Only two places opt out, each with a reason noted below.
+#}
+{% extends "base.html" %}
+{% block title %}{{ e.name }} · The Hitchhiker's Guide{% endblock %}
+{# truncate keeps long names from overflowing the one-line status bar. #}
+{% block crumb %}ENTRY: {{ e.name|upper|truncate(26, True, '…') }}{% endblock %}
+{% block view %}
+<h2>{{ e.name }}</h2>
+<p class="meta">
+  <a href="{{ url_for('index', cat=e.category) }}">{{ e.category_name|upper }}</a> ·
+  FIRST SEEN IN <a href="{{ url_for('book', number=e.book) }}">BOOK {{ e.book }}</a>
+</p>
+<div class="art" aria-hidden="true">
+  {# Opt-out 1: |safe prints the SVG as markup instead of escaping it. That is only
+     acceptable because the art comes from our own files in data/art (never from
+     visitors), and tests/test_data.py checks it contains no scripts.
+     The drawings use classes (a, fa, fp) instead of colours, so guide.css can
+     colour them to match the screen. Entries without their own drawing fall
+     back to their category's drawing. #}
+  <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">{{ (e.art or e.category_art)|safe }}</svg>
+</div>
+<p class="summary">{{ e.summary }}</p>
+
+{# Opt-out 2: autolink (app.py) escapes the text itself, then adds only our own
+   links, so its output is safe to print as-is.
+   Paragraphs are stored separated by blank lines and split into <p> tags here.
+   data-type marks this block for the typewriter effect in guide.js. #}
+<div class="body" data-type>
+  {% for para in e.body.split('\n\n') %}<p>{{ para|autolink(mentions) }}</p>{% endfor %}
+</div>
+
+<section class="panel">
+  <h3>In the story</h3>
+  <p>{{ e.story|autolink(mentions) }}</p>
+</section>
+
+<section class="panel tip">
+  <h3>Hitchhiker's tip</h3>
+  <p>{{ e.tip }}</p>
+</section>
+
+<section class="panel">
+  <h3>Appears in</h3>
+  <ul class="appears">
+    {% for b in appears %}
+    <li><a href="{{ url_for('book', number=b.number) }}"><span class="bn">{{ b.number }}</span>{{ b.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+{# Amazon associate links. rel="sponsored" tells search engines the link is paid
+   (Google asks for this on affiliate links); "noopener" stops the new tab from
+   controlling this one; target="_blank" keeps the Guide open in its own tab. #}
+{% if products %}
+<section class="panel">
+  <h3>Get it on Amazon</h3>
+  <ul class="products">
+    {% for p in products %}
+    <li><a class="buy" href="{{ amazon_url(p.search) }}" target="_blank" rel="sponsored noopener">{{ p.title }} ↗</a>
+      <span class="rb">{{ p.description }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{# Backlinks: the entry_links table read in reverse. Hidden when nothing links here. #}
+{% if mentioned_in %}
+<section class="panel">
+  <h3>Mentioned in {{ mentioned_in|length }} other {{ 'entry' if mentioned_in|length == 1 else 'entries' }}</h3>
+  <div class="related">
+    {% for r in mentioned_in %}<a href="{{ url_for('entry', slug=r.slug) }}">{{ r.name }}</a>{% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

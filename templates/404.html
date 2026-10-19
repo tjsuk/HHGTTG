@@ -1,0 +1,12 @@
+{#
+  404.html: shown for any missing page (the not_found handler in app.py),
+  inside the device so a mistyped address still feels like part of the Guide.
+#}
+{% extends "base.html" %}
+{% block title %}Not found · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}ERROR 404{% endblock %}
+{% block view %}
+<h2>Entry not found</h2>
+<p>This entry has been demolished to make way for a hyperspace bypass. The plans were on display.</p>
+<p class="meta"><a href="{{ url_for('index') }}">Return to the Index</a> or try the search box below.</p>
+{% endblock %}

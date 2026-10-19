@@ -1,0 +1,28 @@
+{#
+  shop.html: every product, grouped by kind (see PRODUCT_KINDS in app.py).
+  The loop's "if items" skips any group that has no products, so empty headings
+  never appear. amazon_url() in app.py adds the associate tag to each link.
+#}
+{% extends "base.html" %}
+{% block title %}Shop · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}SHOP · AMAZON{% endblock %}
+{% block view %}
+<h2>Shop</h2>
+<p class="meta">The books, the radio series, the screen versions and a few useful extras. Each link opens an Amazon search in a new tab.</p>
+{% for label, items in groups.items() if items %}
+<section class="panel">
+  <h3>{{ label }}</h3>
+  <ul class="products">
+    {% for p in items %}
+    <li>
+      <a class="buy" href="{{ amazon_url(p.search) }}" target="_blank" rel="sponsored noopener">{{ p.title }} ↗</a>
+      <span class="rb">{{ p.description }}
+        {%- if p.book %} <a href="{{ url_for('book', number=p.book) }}">About book {{ p.book }}</a>{% endif %}
+        {%- if p.entry_slug %} See <a href="{{ url_for('entry', slug=p.entry_slug) }}">{{ p.entry_name }}</a>.{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% endblock %}

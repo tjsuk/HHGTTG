@@ -1,0 +1,27 @@
+# Products linked to Amazon (as a search, with the associate tag added by the app).
+# One per line:  kind | title | Amazon search terms | book number or - | entry name or - | description
+#   kind: book, collection, audio, screen, extra
+# A book number puts the product on that book's page; an entry name puts it on that entry's page.
+
+book | The Hitchhiker's Guide to the Galaxy | Douglas Adams The Hitchhiker's Guide to the Galaxy novel | 1 | - | The first novel, published in 1979.
+book | The Restaurant at the End of the Universe | Douglas Adams The Restaurant at the End of the Universe | 2 | - | The second novel, published in 1980.
+book | Life, the Universe and Everything | Douglas Adams Life the Universe and Everything | 3 | - | The third novel, published in 1982.
+book | So Long, and Thanks for All the Fish | Douglas Adams So Long and Thanks for All the Fish | 4 | - | The fourth novel, published in 1984.
+book | Mostly Harmless | Douglas Adams Mostly Harmless | 5 | - | The fifth novel, published in 1992.
+book | And Another Thing... | Eoin Colfer And Another Thing Hitchhiker's Guide | 6 | - | Eoin Colfer's sixth book, published in 2009.
+collection | The Ultimate Hitchhiker's Guide to the Galaxy | The Ultimate Hitchhiker's Guide to the Galaxy Douglas Adams omnibus | - | The Guide | All five Douglas Adams novels in one volume.
+collection | The Hitchhiker's Guide box set | Hitchhiker's Guide to the Galaxy box set Douglas Adams | - | - | The novels as a set of separate paperbacks.
+collection | The Salmon of Doubt | Douglas Adams The Salmon of Doubt | - | Zaphod Beeblebrox | Douglas Adams's posthumous collection, including a short Zaphod story.
+audio | The original radio series | Hitchhiker's Guide to the Galaxy complete radio series BBC | - | - | The BBC radio series where the Guide began, in 1978.
+audio | The audiobooks read by Stephen Fry | Stephen Fry Hitchhiker's Guide to the Galaxy audiobook | - | - | The novels read aloud.
+screen | The 1981 BBC television series | Hitchhiker's Guide to the Galaxy 1981 TV series DVD | - | Arthur Dent | The BBC television adaptation.
+screen | The 2005 film | The Hitchhiker's Guide to the Galaxy 2005 film | - | Heart of Gold | The feature film adaptation.
+extra | Don't Panic: Douglas Adams and the Hitchhiker's Guide | Don't Panic Douglas Adams Hitchhiker's Guide Neil Gaiman | - | - | The companion book about the making of the Guide.
+extra | The original radio scripts | Hitchhiker's Guide to the Galaxy original radio scripts | - | Vogon poetry | The scripts of the radio series, with notes.
+extra | A towel worthy of the Guide | Don't Panic Hitchhiker's Guide towel | - | Towels | Every hitchhiker needs one.
+extra | A proper cup of tea | English breakfast tea bags | - | Tea | For Arthur, and anyone else who has met a Nutrimatic machine.
+extra | Something with 42 on it | Hitchhiker's Guide 42 gift | - | 42 | For people who already know the Answer.
+extra | A Marvin figure | Marvin paranoid android figure | - | Marvin | He will not enjoy it on your shelf.
+extra | Peril sensitive sunglasses, more or less | photochromic sunglasses | - | Joo Janta 200 Super-Chromatic Peril Sensitive Sunglasses | The nearest Earth equivalent: they darken in bright light, not in danger.
+extra | Peanuts for the end of the world | salted peanuts | - | Peanuts | As recommended by Ford Prefect.
+extra | A Don't Panic gift | Don't Panic Hitchhiker's Guide gift | - | Hitchhiking | Big, friendly letters for your own journey.

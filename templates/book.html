@@ -1,0 +1,39 @@
+{#
+  book.html: one book's page. Receives from the book() route in app.py:
+    b          the book row, including its synopsis
+    debuts     entries that first appear in this book
+    returning  entries that appear here but first appeared earlier
+    product    the Amazon product for this book (may be None)
+#}
+{% extends "base.html" %}
+{% block title %}{{ b.title }} · The Hitchhiker's Guide{% endblock %}
+{% block crumb %}BOOK {{ b.number }} OF 6{% endblock %}
+{% block view %}
+<h2>{{ b.title }}</h2>
+<p class="meta">{{ b.author|upper }} · {{ b.year }} · <a href="{{ url_for('book_list') }}">ALL BOOKS</a></p>
+<p>{{ b.synopsis }}</p>
+{% if product %}
+<p><a class="buy big" href="{{ amazon_url(product.search) }}" target="_blank" rel="sponsored noopener">Find this book on Amazon ↗</a></p>
+{% endif %}
+
+<section class="panel">
+  <h3>First appearing here ({{ debuts|length }})</h3>
+  <div class="related">
+    {% for e in debuts %}<a href="{{ url_for('entry', slug=e.slug) }}">{{ e.name }}</a>{% endfor %}
+  </div>
+</section>
+
+{% if returning %}
+<section class="panel">
+  <h3>Returning ({{ returning|length }})</h3>
+  <div class="related">
+    {% for e in returning %}<a href="{{ url_for('entry', slug=e.slug) }}">{{ e.name }}</a>{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<p class="meta">
+  {% if b.number > 1 %}<a href="{{ url_for('book', number=b.number - 1) }}">‹ BOOK {{ b.number - 1 }}</a>{% endif %}
+  {% if b.number < 6 %}&nbsp; <a href="{{ url_for('book', number=b.number + 1) }}">BOOK {{ b.number + 1 }} ›</a>{% endif %}
+</p>
+{% endblock %}

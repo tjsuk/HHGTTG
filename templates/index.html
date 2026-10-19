@@ -1,0 +1,55 @@
+{#
+  index.html: the list of entries, with category, book and text filters.
+
+  Filters are links and a GET form, not JavaScript, so each filtered view has
+  its own URL (/index?cat=S&book=2) that works with Back, bookmarks and sharing.
+  guide.js adds instant filtering on top, using the data-text attributes below.
+#}
+{% extends "base.html" %}
+{% block title %}Index · The Hitchhiker's Guide{% endblock %}
+{# id="count" lets guide.js update the number as the instant filter narrows the list. #}
+{% block crumb %}INDEX · <span id="count">{{ entries|length }}</span> ENTRIES{% endblock %}
+{% block view %}
+<h2>Index</h2>
+<p class="meta">Every major name, place and thing from the six novels. Entries marked ◆ have their own drawing. Book filters show everything that appears in that book. <a href="{{ url_for('book_list') }}">Read about the books</a> or visit the <a href="{{ url_for('shop') }}">shop</a>.</p>
+
+{# Each chip keeps the other active filters in its link, so picking a category
+   does not clear the chosen book or text. "q or None" drops an empty q from the URL.
+   aria-current tells screen readers (and the CSS) which chip is selected. #}
+<div class="chips" aria-label="Category">
+  <a class="chip" href="{{ url_for('index', book=book, q=q or None) }}" aria-current="{{ 'true' if not cat else 'false' }}">All</a>
+  {% for c in categories %}
+  <a class="chip" href="{{ url_for('index', cat=c.code, book=book, q=q or None) }}" aria-current="{{ 'true' if cat == c.code else 'false' }}">{{ c.name }}</a>
+  {% endfor %}
+</div>
+<div class="chips" aria-label="Book">
+  <a class="chip" href="{{ url_for('index', cat=cat or None, q=q or None) }}" aria-current="{{ 'true' if not book else 'false' }}">All books</a>
+  {% for b in books %}
+  <a class="chip" href="{{ url_for('index', cat=cat or None, book=b.number, q=q or None) }}" aria-current="{{ 'true' if book == b.number else 'false' }}" title="{{ b.title }} ({{ b.author }}, {{ b.year }})">Book {{ b.number }}</a>
+  {% endfor %}
+</div>
+
+{# Hidden inputs carry the current category and book, so pressing Enter in the
+   filter box keeps them. #}
+<form action="{{ url_for('index') }}" method="get">
+  {% if cat %}<input type="hidden" name="cat" value="{{ cat }}">{% endif %}
+  {% if book %}<input type="hidden" name="book" value="{{ book }}">{% endif %}
+  <input class="filter" id="filter" name="q" value="{{ q }}" placeholder="Filter the index..." aria-label="Filter the index">
+</form>
+
+<ul class="refs" id="refs">
+  {# data-text holds the searchable text in lower case for guide.js. Jinja escapes
+     it automatically, so quotes in a name cannot break the attribute. #}
+  {% for e in entries %}
+  <li data-text="{{ (e.name ~ ' ' ~ e.summary)|lower }}">
+    <a href="{{ url_for('entry', slug=e.slug) }}">
+      <span class="rn">{% if e.featured %}◆ {% endif %}{{ e.name }}</span>
+      <span class="rb">{{ e.summary }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{# Always rendered, hidden when there are results, so guide.js can show it when
+   typing filters everything out. #}
+<p class="empty" id="empty" {% if entries %}hidden{% endif %}>Nothing in the index matches. The Guide apologises for the inconvenience.</p>
+{% endblock %}
